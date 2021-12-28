@@ -1,0 +1,171 @@
+body{
+    background-image: url('../img/fundo-login.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(14, 83, 193, .90);
+    display: grid;
+    grid-template-columns: 10% 55% 35%;
+    
+}
+
+.container .container-linhas{
+    /* width: 200px; */
+    border: solid 1px red;
+    
+}
+
+
+
+/* CONTAINER TEXTO */
+.container .container-texto{
+    /* width: 1fr; */
+    border: solid 1px red;
+    padding-left: 40px;
+}
+
+.container-texto .box-texto{
+    display: flex;
+    max-width: 600px;
+    padding-top: 150px;
+}
+
+
+.container-texto .box-texto .box1{
+    color: white;
+    
+}
+
+
+
+/* CONTAINER LOGIN */
+.container .container-login{
+    /* border: solid 1px red; */
+    margin-right: 100px;
+    height: 90vh;
+    border: solid 2px rgba(255, 255, 255, 0.10);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .05);
+    text-align: center;
+    position: relative;
+    
+}
+
+/* Logo */
+.container-login .container-login-logo{
+    margin-top: 100px;
+}
+
+.container-login .container-login-logo #logo{
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    
+}
+
+/* Formulario */
+.container-login .container-login-formulario{
+    margin-top: 100px;
+    padding: 0px 50px;
+}
+
+.container-login-formulario .fundo-input{
+    width: 100%;
+    height: 80px;
+    text-align: left;
+    line-height: 80px;
+    padding: 0px 30px;
+    background-color: transparent;
+    border: solid 3px white;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.container-login-formulario .fundo-input i{
+    color: white;
+    font-size: 30px;
+}
+
+.container-login-formulario .fundo-input input{
+    background: transparent;
+    border: none;
+    width: 90%;
+    height: 90%;
+    padding-left: 20px;
+    font-size: 20px;
+    outline: none;
+    color: white;
+    
+    
+}
+
+.container-login-formulario .manter-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.container-login-formulario .manter-login #checkConectado{
+    width: 25px;
+    /* border: solid 3px white; */
+}
+
+.container-login-formulario .manter-login .texto{
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    
+}
+
+.container-login-formulario #btnAcessar{
+    width: 100%;
+    height: 80px;
+    margin-top: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    color: #1164f2;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.container-login-formulario #btnAcessar:hover{
+    background-color: transparent;
+    color: white;
+    border: solid 3px white;
+    transition: .5s;
+}
+
+.container-login-formulario .textoClique{
+    margin-top: 25px;
+    color: white;
+    font-size: 18px;
+}
+
+.container-login-formulario .textoClique a{
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.container-login-formulario .textoClique a:hover{
+    color: rgb(221, 221, 221);
+    border-bottom: solid 3px white;
+    transition: .2s;
+}
+
+/* Direitos */
+.container-login .container-login-direitos{
+    color: white;
+    margin-top: 100px;
+    font-weight: 10;
+}
