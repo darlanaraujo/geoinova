@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Importação do Estilo -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo-tela-login.css">
 
     <!-- Importação Fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,78 +24,84 @@
     <!--Icone do navegador-->
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
 
+    <!-- Importação do JS -->
+    <script src="./js/login.js" defer></script>
+
     <title>GeoInova - Login</title>
 </head>
 <body>
-    <section class="container">
-        <div class="container-linhas"></div>
+    <div class="slide-fundo">
+        <section class="container">
+            
+            <div class="container-linhas"></div>
 
-        <div class="container-texto">
-            <section class="box-texto">
-                <div class="box1">
-                    <ul class="menu-circular">
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                        <li><a href="/"></a></li>
-                    </ul>
-                </div>
-                <div class="box2">
-                    <div class="menu-btn">
-                        <button id="btnVoltar"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+            <div class="container-texto">
+                <section class="box-texto">
+                    <div class="box1">
+                        <ul class="menu-circular">
+                            <li><a href="/"></a></li>
+                            <li><a href="/"></a></li>
+                            <li><a href="/"></a></li>
+                            <li><a href="/"></a></li>
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <button class="btn-menu" id="btnVoltar"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
                         </button>
-                        <button id="btnProxima"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                        <button class="btn-menu" id="btnProxima"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                         </button>
+                        <div class="titulo">
+                            <h1 id="titulo">Monitoramento Digital de Áreas e Territórios</h1>
+                        </div>
+                        <div class="texto">
+                            Inovamaps é uma plataforma digital de sensoriamento remoto que oferece não apenas imagens de satélite, mastambém
+                            a possibilidade de monitorar pequenas ou grandes extensões de áreas e propriedades. O monitoramento é feito de
+                            forma preventiva, ou seja, é possível detectar problemas como desmatamento, invasão de propriedades, aproximação
+                            entre duas áreas, entre outros itens.
+                        </div>
+                        <div class="btn-saibaMais">
+                            <button id="btnSaibaMais">Saiba mais</button>
+                        </div>
                     </div>
-                    <div class="titulo">
-                        <h1>Monitoramento Digital de Áreas e Territórios</h1>
-                    </div>
-                    <div class="texto">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptate asperiores nesciunt velit, facilis, ipsa repellendus nulla iusto, itaque culpa dolorem est dolore repellat autem aperiam illo sequi ex repudiandae!
-                    </div>
-                    <div class="btn-saibaMais">
-                        <button id="btnSaibaMais">Saiba mais</button>
-                    </div>
+                </section>
+            </div>
+            
+            <div class="container-login">
+                <div class="container-login-logo">
+                    <figure class="icon-logo">
+                        <img id="icon-logo" src="./img/logo2.png" alt="">
+                    </figure>
+                    
                 </div>
-            </section>
-        </div>
-        
-        <div class="container-login">
-            <div class="container-login-logo">
-                <figure id="icon-logo">
-                    <img src="./img/icon.png" alt="">
-                </figure>
-                <figcaption>
-                    <span id="logo">GeoInova</span>
-                </figcaption>
-            </div>
-            
-            <div class="container-login-formulario">
-                <form action="">
-                    <div class="fundo-input">
-                        <i class="fas fa-user"></i>
-                        <input type="email" name="usuario" id="usuario" placeholder="Usuário">
-                    </div>
-                    <div class="fundo-input">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
-                    </div>
-                    <div class="manter-login">
-                        <input type="checkbox" name="conectado" id="checkConectado">
-                        <span class="texto">Manter conectado</span>
-                    </div>
+                
+                <div class="container-login-formulario">
+                    <form action="">
+                        <div class="fundo-input">
+                            <i class="fas fa-user"></i>
+                            <input type="email" name="login" id="login" placeholder="Usuário" required='required'>
+                        </div>
+                        <div class="fundo-input">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="senha" id="senha" placeholder="Senha" required='required'>
+                        </div>
+                        <div class="manter-login">
+                            <input type="checkbox" name="conectado" id="checkConectado">
+                            <span class="texto">Manter conectado</span>
+                        </div>
 
-                    <button class="btn" id="btnAcessar">Acessar</button>
+                        <button class="btn" id="btnAcessar">Acessar</button>
 
-                    <p class="textoClique">Esqueceu sua senha? <a href="/" id="cliqueAqui">Clique aqui</a></p>
-                </form>
+                        <p class="textoClique">Esqueceu sua senha? <a href="" id="cliqueAqui">Clique aqui</a></p>
+                    </form>
+                </div>
+                
+                <div class="container-login-direitos">
+                    <p id="direitos">©2021 Geoinova | Todos os direitos reservados.</p>
+                </div>
             </div>
+
             
-            <div class="container-login-direitos">
-                <p id="direitos">©2021 Geoinova | Todos os direitos reservados.</p>
-            </div>
-            
-        </div>
-    </section>
+        </section>
+    </div>
 </body>
 </html>
