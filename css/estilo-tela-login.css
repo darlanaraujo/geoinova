@@ -2,31 +2,45 @@
 
 @keyframes slide-fundo {
     from{
-        transform: translate3d(100px, 0, 0);
+        /* background-position: left; */
+        transform: scale(1.5, 1.5);
     }
     to{
-        transform: translate3d(0px, 0, 0);
+        /* background-position: right; */
+        transform: scale(1, 1);
     }
+}
+
+body{
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .slide-fundo{
-    background-image: url('../img/fundo-terra.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    /* animation-name: slide-fundo;
-    animation-duration: 30s; */
+    /* background-image: url('../img/fundo-terra.png'); */
     
+    animation-name: slide-fundo;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
 }
 
+
 .container{
+    position: absolute;
     max-width: 100%;
     min-width: 100vw;
     max-height: 100%;
     min-height: 100vh;
-    background-color: rgba(14, 83, 193, 0.7);
+    background-color: rgba(14, 83, 193, 0.5);
+    /* background-color: transparent; */
     display: grid;
-    grid-template-columns: 10% minmax(400px, 55%) minmax(500px, 35%);
+    grid-template-columns: 7% minmax(400px, 55%) minmax(500px, 35%);
+    overflow: scroll;
     
 }
 
@@ -288,6 +302,25 @@
     margin-top: 50px;
     margin-bottom: 30px;
     font-weight: 10;
+}
+
+@media (max-height: 850px){
+    body{
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .slide-fundo{
+        animation: none;
+    }
+
+    #imgFundo{
+        /* width: 100vw; */
+        height: 100vh;
+        background-position: bottom;
+        background-size: cover;
+
+    }
 }
 
 @media (max-width: 1200px){
