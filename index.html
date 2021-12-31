@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Importação do Estilo -->
-    <link rel="stylesheet" href="css/estilo-tela-login.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo-tela-principal.css">
 
     <!-- Importação Fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +28,51 @@
     <title>GeoInova - Tela Principal</title>
 </head>
 <body>
-    Tela Principal
+    <section class="containerPrincipal">
+    
+        <section class="topo">
+            <header class="headerMenu">
+                <figure class="logo">
+                    <img src="./img/icon-azul.png" alt="[Logo/Icone Geoinova]" title="Logo/Icone Geoinova" id="iconeLogo">
+                </figure>
+
+                <div class="fundoPesquisa">
+                    <form action="">
+                        <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquise por uma localidade">
+                        <button id='btnPesquisa'><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <nav class="menuTopo">
+                    <ul>
+                        <li><a href=""><i class="fas fa-columns"></i>Dashboard</a></li>
+                        <li><a href=""><i class="fas fa-map-marked-alt"></i>Mapa</a></li>
+                        <li><a href=""><i class="far fa-window-restore"></i>Ativos</a></li>
+                        <li><a href=""><i class="far fa-bell"></i>Alertas</a></li>
+                        <li><a href=""><i class="fas fa-exclamation-triangle"></i>Riscos</a></li>
+                        <li><a href=""><i class="far fa-user"></i>Usuários</a></li>
+                        <li><a href=""><i class="far fa-folder-open"></i>Licenças</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <header class="headerBoxUsuario">
+                
+                <div class="dadosUsuario">
+
+                    <figure class="fotoUsuario">
+                        <img src="./img/foto-usuario.png" alt="">
+                    </figure>
+
+                    <div class="texto">
+                        <p id="msgUsuario">Bem Vindo</p>
+                        <p id="nomeUsuario">Diego Borges</p>
+                    </div>
+                </div>
+                <button id="btnBoxUsuario">Menu</button>
+            </header>
+        </section>
+
+    </section>
 </body>
 </html>
