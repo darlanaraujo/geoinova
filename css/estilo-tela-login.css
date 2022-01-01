@@ -11,6 +11,26 @@
     }
 }
 
+@keyframes fadeTopo {
+    from{
+        transform: translate3d(0, -900px, 0);
+    }
+    to{
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeBotton {
+    from{
+        transform: translate3d(0, 100px, 0);
+        opacity: 0;
+    }
+    to{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
 body{
     display: flex;
     position: relative;
@@ -130,7 +150,25 @@ body{
     margin-bottom: 35px;
 }
 
+.container-texto .box-texto .box2 #titulo::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: efeitoDigitacao .7s infinite;
+}
+
+@keyframes efeitoDigitacao {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 .container-texto .box-texto .box2 .texto{
+    animation: fadeBotton 2s 2s forwards;
+    opacity: 0;
     color: white;
     font-size: 19px;
     font-weight: 400;
@@ -139,6 +177,8 @@ body{
 }
 
 .container-texto .box-texto .box2 .btn-saibaMais{
+    animation: fadeBotton 2s 2s forwards;
+    opacity: 0;
     max-width: 500px;
 }
 
@@ -161,6 +201,7 @@ body{
 
 /* CONTAINER LOGIN */
 .container .container-login{
+    animation: fadeTopo 2s;
     margin-top: 100px;
     margin-bottom: 50px;
     margin-left: 20px;

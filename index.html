@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Importação do Estilo -->
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/estilo-tela-principal.css">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/estilo-tela-principal.css">
+    <link rel="stylesheet" href="/css/estilo-principal-menu-direito.css">
+    <link rel="stylesheet" href="/css/estilo-principal-menu-esquerdo.css">
+    <link rel="stylesheet" href="/css/estilo-principal-footer.css">
+
+    <!-- Importação JS -->
+    <script src="./js/tela-principal.js" defer></script>
 
     <!-- Importação Fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,14 +22,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
     <!--Importação de imagens Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <!--Icone do navegador-->
-    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
 
     <title>GeoInova - Tela Principal</title>
 </head>
@@ -33,7 +43,7 @@
         <section class="topo">
             <header class="headerMenu">
                 <figure class="logo">
-                    <img src="./img/icon-azul.png" alt="[Logo/Icone Geoinova]" title="Logo/Icone Geoinova" id="iconeLogo">
+                    <img src="/img/icon-azul.png" alt="[Logo/Icone Geoinova]" title="Logo/Icone Geoinova" id="iconeLogo">
                 </figure>
 
                 <div class="fundoPesquisa">
@@ -48,7 +58,7 @@
                         <li><a href=""><i class="fas fa-columns"></i>Dashboard</a></li>
                         <li><a href=""><i class="fas fa-map-marked-alt"></i>Mapa</a></li>
                         <li><a href=""><i class="far fa-window-restore"></i>Ativos</a></li>
-                        <li><a href=""><i class="far fa-bell"></i>Alertas</a></li>
+                        <li><a href=""><i class="far fa-bell"></i>Alertas<span id="qtdAlerta">5</span></a></li>
                         <li><a href=""><i class="fas fa-exclamation-triangle"></i>Riscos</a></li>
                         <li><a href=""><i class="far fa-user"></i>Usuários</a></li>
                         <li><a href=""><i class="far fa-folder-open"></i>Licenças</a></li>
@@ -56,23 +66,120 @@
                 </nav>
             </header>
 
-            <header class="headerBoxUsuario">
+            <header id="headerBoxUsuario">
                 
                 <div class="dadosUsuario">
 
                     <figure class="fotoUsuario">
-                        <img src="./img/foto-usuario.png" alt="">
+                        <img src="/img/foto-usuario.png" alt="">
                     </figure>
 
                     <div class="texto">
-                        <p id="msgUsuario">Bem Vindo</p>
+                        <p id="msgUsuario">Bem-Vindo</p>
                         <p id="nomeUsuario">Diego Borges</p>
                     </div>
                 </div>
-                <button id="btnBoxUsuario">Menu</button>
+
+                <button id="btnBoxUsuario">
+                    <span id="hamburger"></span>
+                </button>
+
+                <div id="ajustes">
+                    <figure id="bandeiras">
+                        <a href="" aria-label="Portugues"><img src="/img/bandeira-brasil.png" alt=""></a>
+                        <a href="" aria-label="Inglês"><img src="/img/bandeira-reino-unido.png" alt=""></a>
+                        <a href="" aria-label="Espanhol"><img src="/img/bandeira-espanha.png" alt=""></a>
+                    </figure>
+
+                    <div id="ajustes-box1">
+
+                        <div id="box1">
+                            <div>
+                                <i class="far fa-user"></i>
+                                <p>Administrador</p>  
+                            </div>
+                            
+                            <span id="status"></span>
+                        </div>
+                        
+                    </div>
+
+                    <div id="ajustes-box2">
+                        <div id="item1">
+                            <p id="texto">Plano Contratado</p>
+                            <p id="dados">Básico</p>
+                        </div>
+
+                        <div id="item2">
+                            <p id="texto">Área Contradata</p>
+                            <p id="dados">5.000ha</p>
+                        </div>
+
+                        <div id="item3">
+                            <p id="texto">Área Utilizada</p>
+                            <p id="dados">3.000ha</p>
+                        </div>
+                    </div>
+
+                    <div id="ajustes-box3">
+                        <button id="btnCadastrarAtivos">
+                            <i class="far fa-window-restore"></i>
+                            Cadastrar ativos
+                        </button>
+
+                        <button id="btnCompartilharAlerta">
+                            <i class="far fa-bell"></i>
+                            Compartilhar alerta
+                        </button>
+                    </div>
+
+                    <div id="ajustes-box4">
+                        <ul id="menuAjustes">
+                            <li><a href="" aria-label="Contato"><i class="fas fa-headset"></i></a></li>
+                            <li><a href="" aria-label="Ajustes"><i class="fas fa-cog"></i></a></li>
+                            <li><a href="" aria-label="Alertas"><i class="far fa-bell"></i><span id="qtdAlerta"></span></a></li>
+                            <li><a href="" aria-label="Sair"><i class="fas fa-sign-out-alt"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </header>
         </section>
 
+        <main class="corpo">
+
+            <!-- Lateral Esquerda -->
+            <section id="lateralEsquerda">
+                <div id="menuEsquerdo">
+                    <button id="btnCamada" aria-label="Camadas"><i class="fas fa-layer-group"></i></button>
+                    <button id="btnImagens" aria-label="Imagens"><i class="far fa-images"></i></button>
+                    <button id="btnComparar" aria-label="Comparar"><i class="far fa-clone"></i></button>
+                </div>
+            </section>
+
+            <!-- BOTÕES RODAPÉ ESQUERDO -->
+            <footer id="footer">
+
+                <section id="menu-esquerdo-footer">
+                    <button id="btnMais" aria-label="Mais Zoom"><i class="fas fa-plus"></i></button>
+                    <button id="btnMenos" aria-label="Menos Zoom"><i class="fas fa-minus"></i></button>
+                    <button id="btnEdicao" aria-label="Editar"><i class="fas fa-draw-polygon"></i></button>
+                    <button id="btnImg" aria-label="Salvar"><i class="far fa-image"></i></button>
+                </section>
+                
+                <section id="menu-direito-footer">
+                    <div id="item1">
+                        <p id="texto">Localização:</p>
+                        <p id="valorLocalizacao">( -<span id="latitude">20.6074</span>, -<span id="logitude">43.7215</span>)</p>
+                    </div>
+
+                    <div id="item2">
+                        <i class="far fa-image"></i>
+                        <p id="texto">Tipo:</p>
+                        <p id="valorTipo">RGB</p>
+                    </div>
+                </section>
+            </footer>
+        </main>
     </section>
 </body>
 </html>

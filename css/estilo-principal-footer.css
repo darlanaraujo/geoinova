@@ -1,0 +1,95 @@
+@keyframes fadeBottom{
+    from{
+        transform: translate3d(0, 100px, 0);
+    }
+    to{
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.containerPrincipal .corpo #footer{
+    animation: fadeBottom 1s;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    color: #636363;
+}
+
+/* MENU ESQUERDO */
+.containerPrincipal #footer #menu-esquerdo-footer{
+    margin-left: 40px;
+    
+}
+
+.containerPrincipal #footer #menu-esquerdo-footer > button{
+    background: none;
+    border: none;
+    width: 35px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #eeeeee;
+    font-size: 23px;
+    color: #636363;
+    cursor: pointer;
+}
+
+.containerPrincipal #footer #menu-esquerdo-footer > button:hover{
+    color: #0052f3;
+}
+
+.containerPrincipal #footer #menu-esquerdo-footer > button#btnMais{
+    border-radius: 8px 0 0 8px;
+    margin-right: -2px;
+}
+
+.containerPrincipal #footer #menu-esquerdo-footer > button#btnMenos{
+    border-radius: 0 8px 8px 0;
+    margin-right: 5px;
+}
+
+.containerPrincipal #footer #menu-esquerdo-footer > button[aria-label]::after{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: max-content;
+}
+
+
+/* MENU DIREITO */
+.containerPrincipal #footer #menu-direito-footer{
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    border-radius: 50px;
+    padding: 5px 20px;
+    width: 360px;
+    height: 30px;
+    font-size: 12px;
+    
+}
+
+.containerPrincipal #footer #menu-direito-footer #item1{
+    display: flex;
+    gap: 5px;
+    width: 70%;
+    
+    align-items: center;
+    /* padding-right: 10px; */
+    border-right: solid 1px #636363;
+}
+
+.containerPrincipal #footer #menu-direito-footer #item2{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.containerPrincipal #footer #menu-direito-footer #item2 #valorTipo{
+    padding-left: 3px;
+}

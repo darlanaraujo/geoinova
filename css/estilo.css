@@ -9,3 +9,31 @@
     text-decoration: none;
     list-style-type: none;
 }
+
+[aria-label] {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+[aria-label]::after {
+    content: attr(aria-label);
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 255, 255, .80);
+    color: #0052f3;
+    border-radius: 5px;
+    padding: 2px 5px;
+    pointer-events: none;
+    font-size: 12px;
+    right: 10px;
+    z-index: 1000;
+    width: max-content;
+    height: max-content;
+    
+}
+    
+[aria-label]:hover::after {
+    display: block;
+    transition: .3s;
+}
