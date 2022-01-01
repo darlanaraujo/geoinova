@@ -23,7 +23,7 @@ function efeitoDigitacao(elemento){
         // console.log(letra);
         setTimeout(() => {
             elemento.innerHTML += letra;
-        }, 75 * i);
+        }, 60 * i);
     });
 
 }

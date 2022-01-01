@@ -356,7 +356,7 @@ body{
     }
 
     #imgFundo{
-        /* width: 100vw; */
+        width: 100vw;
         height: 100vh;
         background-position: bottom;
         background-size: cover;
@@ -390,6 +390,8 @@ body{
         display: block;
         padding: 0;
         margin: 0;
+        
+        
     }
 
     .container-texto .box-texto .box1{
@@ -397,8 +399,11 @@ body{
     }
 
     .container-texto .box-texto .box2{
-        margin: 0;
+        display: block;
+        margin: 0 auto;
         padding: 20px 0px;
+        
+        
     }
 
     .container .container-login{

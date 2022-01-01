@@ -1,14 +1,17 @@
 @keyframes fadeBottom{
     from{
         transform: translate3d(0, 100px, 0);
+        opacity: 0;
     }
     to{
         transform: translate3d(0, 0, 0);
+        opacity: 1;
     }
 }
 
 .containerPrincipal .corpo #footer{
-    animation: fadeBottom 1s;
+    opacity: 0;
+    animation: fadeBottom 1s 3.5s forwards;
     position: absolute;
     bottom: 20px;
     display: flex;
@@ -16,11 +19,12 @@
     height: 40px;
     justify-content: space-between;
     color: #636363;
+    transition: 1s;
 }
 
 /* MENU ESQUERDO */
 .containerPrincipal #footer #menu-esquerdo-footer{
-    margin-left: 40px;
+    margin-left: 20px;
     
 }
 
@@ -60,7 +64,7 @@
 
 /* MENU DIREITO */
 .containerPrincipal #footer #menu-direito-footer{
-    margin-right: 40px;
+    margin-right: 36px;
     display: flex;
     justify-content: space-between;
     background-color: #eeeeee;
@@ -92,4 +96,32 @@
 
 .containerPrincipal #footer #menu-direito-footer #item2 #valorTipo{
     padding-left: 3px;
+}
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 767px){
+    
+}
+
+@media (max-width: 650px){
+    .containerPrincipal .corpo #footer{
+        display: inline-block;
+        bottom: 50px;
+        text-align: center;
+        
+    }
+
+    .containerPrincipal #footer #menu-esquerdo-footer{
+        margin-left: 2px;
+        
+    }
+
+    .containerPrincipal #footer #menu-direito-footer{
+        /* margin-left: 40px; */
+        margin: 0 auto;
+        margin-top: 10px;
+    }
 }
