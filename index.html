@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/css/estilo-tela-principal.css">
     <link rel="stylesheet" href="/css/estilo-principal-menu-direito.css">
     <link rel="stylesheet" href="/css/estilo-principal-menu-esquerdo.css">
+    <link rel="stylesheet" href="/css/estilo-box-esquerdo-menu-camadas.css">
+    <link rel="stylesheet" href="/css/estilo-box-esquerdo-menu-imagens.css">
+    <link rel="stylesheet" href="/css/estilo-box-esquerdo-menu-comparar.css">
     <link rel="stylesheet" href="/css/estilo-principal-footer.css">
 
     <!-- Importação JS -->
@@ -150,10 +153,197 @@
             <!-- Lateral Esquerda -->
             <section id="lateralEsquerda">
                 <div id="menuEsquerdo">
-                    <button id="btnCamada" aria-label="Camadas"><i class="fas fa-layer-group"></i></button>
+                    <button id="btnCamadas" aria-label="Camadas"><i class="fas fa-layer-group"></i></button>
                     <button id="btnImagens" aria-label="Imagens"><i class="far fa-images"></i></button>
                     <button id="btnComparar" aria-label="Comparar"><i class="far fa-clone"></i></button>
                 </div>
+
+                <section id="boxEsquerdo">
+
+                    <!-- BOX CAMADAS -->
+                    <section id="boxCamadas">
+                        <div id="box1">
+                            <h2 id="titulo">Camadas <a href="" id="btnInfo" aria-label="Saiba mais"><i class="fas fa-info-circle"></i></a></h2>
+                            <button id="btnFechar" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                        </div>
+
+                        <div id="box2">
+                            <div class="fundoPesquisa">
+                                <form action="">
+                                    <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar camada">
+                                    <button id='btnPesquisa'><i class="fas fa-search"></i></button>
+                                </form>
+
+                                <p id="valorResultados">74<span id="textoResultados">resultados encontrados</span></p>
+                            </div>
+                        </div>
+
+                        <div id="box3">
+                            <ul>
+                                <li id="item1">
+                                    <label class="switch">
+                                        <div class="switch-wrapper">
+                                            <input type="checkbox" name="" id="check-item1">
+                                            <span class="switch-button"></span>  
+                                        </div>
+                                        <span class="switch-texto">Área de Monitoramento</span>
+                                    </label>
+                                    <a href="#" aria-label="Exibir" id="btnExibir"><i class="fas fa-sort-down"></i></a>
+
+                                    
+                                    <ul id="sub-menu-item1">
+                                        <li id="item1-1">
+                                            <label class="switch">
+                                                <div class="switch-wrapper">
+                                                    <input type="checkbox" name="" id="check-item1">
+                                                    <span class="switch-button"></span>  
+                                                </div>
+                                                <span class="switch-texto">Fazenda Água Fria</span>
+                                            </label>
+                                            <a href="#" aria-label="Exibir"><i class="fas fa-sort-down"></i></a>
+                                        </li>
+
+                                        <li id="item1-2">
+                                            <label class="switch">
+                                                <div class="switch-wrapper">
+                                                    <input type="checkbox" name="" id="check-item1">
+                                                    <span class="switch-button"></span>  
+                                                </div>
+                                                <span class="switch-texto">Garimpo Rio Vermelho</span>
+                                            </label>
+                                            <!-- <a href="#" aria-label="Exibir"><i class="fas fa-sort-down"></i></a> -->
+                                        </li>
+
+                                        <li id="item1-3">
+                                            <label class="switch">
+                                                <div class="switch-wrapper">
+                                                    <input type="checkbox" name="" id="check-item1">
+                                                    <span class="switch-button"></span>  
+                                                </div>
+                                                <span class="switch-texto">Garimpo Santa Luzia</span>
+                                            </label>
+                                            <!-- <a href="#" aria-label="Exibir"><i class="fas fa-sort-down"></i></a> -->
+                                        </li>
+
+                                        <li id="item1-4">
+                                            <label class="switch">
+                                                <div class="switch-wrapper">
+                                                    <input type="checkbox" name="" id="check-item1">
+                                                    <span class="switch-button"></span>  
+                                                </div>
+                                                <span class="switch-texto">Horto Aranha</span>
+                                            </label>
+                                            <!-- <a href="#" aria-label="Exibir"><i class="fas fa-sort-down"></i></a> -->
+                                        </li>
+
+                                        <li id="item1-5">
+                                            <label class="switch">
+                                                <div class="switch-wrapper">
+                                                    <input type="checkbox" name="" id="check-item1">
+                                                    <span class="switch-button"></span>  
+                                                </div>
+                                                <span class="switch-texto">LT Codemin</span>
+                                            </label>
+                                            <!-- <a href="#" aria-label="Exibir"><i class="fas fa-sort-down"></i></a> -->
+                                        </li>
+
+                                        <li id="item1-6">
+                                            <label class="switch">
+                                                <div class="switch-wrapper">
+                                                    <input type="checkbox" name="" id="check-item1">
+                                                    <span class="switch-button"></span>  
+                                                </div>
+                                                <span class="switch-texto">OCO Codemin</span>
+                                            </label>
+                                            <!-- <a href="#" aria-label="Exibir"><i class="fas fa-sort-down"></i></a> -->
+                                        </li>
+
+                                        <li id="item1-7">
+                                            <label class="switch">
+                                                <div class="switch-wrapper">
+                                                    <input type="checkbox" name="" id="check-item1">
+                                                    <span class="switch-button"></span>  
+                                                </div>
+                                                <span class="switch-texto">Rosariana</span>
+                                            </label>
+                                            <!-- <a href="#" aria-label="Exibir"><i class="fas fa-sort-down"></i></a> -->
+                                        </li>
+                                        
+                                    </ul>
+
+                                </li>
+        
+                                <li id="item2">
+                                    <label class="switch">
+                                        <div class="switch-wrapper">
+                                            <input type="checkbox" name="" id="check-item2">
+                                            <span class="switch-button"></span>  
+                                        </div>
+                                        <span class="switch-texto">Direito Mineral</span>
+                                    </label>
+                                    <a href="#" aria-label="Exibir"><i class="fas fa-sort-down"></i></a>
+                                </li>
+
+                                <li id="item3">
+                                    <label class="switch">
+                                        <div class="switch-wrapper">
+                                            <input type="checkbox" name="" id="check-item3">
+                                            <span class="switch-button"></span>  
+                                        </div>
+                                        <span class="switch-texto">Limites da Propriedade</span>
+                                    </label>
+                                    <a href="#" aria-label="Exibir"><i class="fas fa-sort-down"></i></a>
+                                </li>
+
+                                <li id="item4">
+                                    <label class="switch">
+                                        <div class="switch-wrapper">
+                                            <input type="checkbox" name="" id="check-item4">
+                                            <span class="switch-button"></span>  
+                                        </div>
+                                        <span class="switch-texto">Licenças de Mineração</span>
+                                    </label>
+                                    <a href="#" aria-label="Exibir"><i class="fas fa-sort-down"></i></a>
+                                </li>
+
+                                
+                            </ul>
+
+                    </section>
+
+                    <!-- BOX IMAGENS -->
+                    <section id="boxImagens">
+                        <div id="box1">
+                            <h2 id="titulo">Imagens <a href="" id="btnInfo" aria-label="Saiba mais"><i class="fas fa-info-circle"></i></a></h2>
+                            <button id="btnFechar" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                        </div>
+
+                        <div id="box2">
+                            Box 2
+                        </div>
+
+                        <div id="box3">
+                            Box 3
+                        </div>
+                    </section>
+
+                    <!-- BOX COMPARAR -->
+                    <!-- <section id="boxComparar">
+                        <div id="box1">
+                            <h2 id="titulo">Comparar <a href="" id="btnInfo" aria-label="Saiba mais"><i class="fas fa-info-circle"></i></a></h2>
+                            <button id="btnFechar" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                        </div>
+
+                        <div id="box2">
+                            Box 2
+                        </div>
+
+                        <div id="box3">
+                            Box 3
+                        </div>
+                    </section> -->
+
+                </section>
             </section>
 
             <!-- BOTÕES RODAPÉ ESQUERDO -->

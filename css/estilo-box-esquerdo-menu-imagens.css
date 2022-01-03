@@ -1,0 +1,95 @@
+/** =========================================================================
+ ** MENU ESQUERDO - IMAGENS
+ ** ========================================================================*/
+ .containerPrincipal #lateralEsquerda #boxEsquerdo #boxImagens{
+    opacity: 0;
+    z-index: 999 !important;
+    animation: fadeBoxVoltar .5s forwards;
+    position: absolute;
+    top: 0px;
+    left: 73px;
+    z-index: 1099;
+    background-color: #eeeeee;
+    border-radius: 0 10px 10px 0;
+    border-left: solid 2px #dedede;
+    width: 0;
+    height: calc(100vh - 250px);
+    transition: .5s;
+}
+
+@keyframes fadeBox {
+    from{
+        width: 0;
+        opacity: -10;
+    }
+    to{
+        width: 300px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeBoxVoltar {
+    from{
+        width: 350px;
+        opacity: 1;
+    }
+    to{
+        transition: .5s;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+ .containerPrincipal #lateralEsquerda.active #boxEsquerdo #boxImagens.active{
+    animation: fadeBox .5s .5s forwards;
+ }
+
+ 
+/* ESTILO BOX1 */
+#boxEsquerdo #boxImagens #box1{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+/* ESTILO BOX1 - TITÚLO */
+#boxEsquerdo #boxImagens #box1 #titulo{
+    color: #0052f3;
+}
+
+#boxEsquerdo #boxImagens #box1 #titulo #btnInfo{
+    font-size: 18px;
+    color: black;
+}
+
+#boxEsquerdo #boxImagens #box1 #titulo #btnInfo:hover{
+    color: #636363;
+}
+
+#boxEsquerdo #boxImagens #box1 #titulo #btnInfo[aria-label]::after{
+    position: absolute;
+    top: -2px;
+    left: 25px;
+    width: max-content;
+}
+
+/* ESTILO BOX1 - BOTÃO FECHAR */
+#boxEsquerdo #boxImagens #box1 #btnFechar{
+    background: none;
+    border: none;
+    color: #0052f3;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#boxEsquerdo #boxImagens #box1 #btnFechar:hover{
+    color: #636363;
+}
+
+#boxEsquerdo #boxImagens #box1 #btnFechar[aria-label]::after{
+    position: absolute;
+    top: -2px;
+    right: 25px;
+    width: max-content;
+}

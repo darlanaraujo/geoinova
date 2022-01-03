@@ -1,0 +1,312 @@
+/** =========================================================================
+ ** MENU ESQUERDO - CAMADAS
+ ** ========================================================================*/
+ .containerPrincipal #lateralEsquerda #boxEsquerdo #boxCamadas{
+    opacity: 0;
+    z-index: 999 !important;
+    animation: fadeBoxVoltar .5s forwards;
+    position: absolute;
+    top: 0px;
+    left: 73px;
+    z-index: 1099;
+    background-color: #eeeeee;
+    border-radius: 0 10px 10px 0;
+    border-left: solid 2px #dedede;
+    width: 0;
+    height: calc(100vh - 250px);
+    transition: .5s;
+}
+
+@keyframes fadeBox {
+    from{
+        width: 0;
+        opacity: -10;
+    }
+    to{
+        width: 300px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeBoxVoltar {
+    from{
+        width: 350px;
+        opacity: 1;
+    }
+    to{
+        transition: .5s;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+ .containerPrincipal #lateralEsquerda.active #boxEsquerdo #boxCamadas.active{
+    animation: fadeBox .5s .5s forwards;
+ }
+
+ 
+/* ESTILO BOX1 */
+#boxEsquerdo #boxCamadas #box1{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+/* ESTILO BOX1 - TITÚLO */
+#boxEsquerdo #boxCamadas #box1 #titulo{
+    color: #0052f3;
+}
+
+#boxEsquerdo #boxCamadas #box1 #titulo #btnInfo{
+    font-size: 18px;
+    color: black;
+}
+
+#boxEsquerdo #boxCamadas #box1 #titulo #btnInfo:hover{
+    color: #636363;
+}
+
+#boxEsquerdo #boxCamadas #box1 #titulo #btnInfo[aria-label]::after{
+    position: absolute;
+    top: -2px;
+    left: 25px;
+    width: max-content;
+}
+
+/* ESTILO BOX1 - BOTÃO FECHAR */
+#boxEsquerdo #boxCamadas #box1 #btnFechar{
+    background: none;
+    border: none;
+    color: #0052f3;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#boxEsquerdo #boxCamadas #box1 #btnFechar:hover{
+    color: #636363;
+}
+
+#boxEsquerdo #boxCamadas #box1 #btnFechar[aria-label]::after{
+    position: absolute;
+    top: -2px;
+    right: 25px;
+    width: max-content;
+}
+
+
+/* ESTILO BOX2 */
+#boxEsquerdo #boxCamadas #box2{
+    border-top: solid 2px #dedede;
+    padding: 10px;
+    /* margin-bottom: 40px; */
+    height: 120px;
+}
+
+/* ESTILO BOX2 - PESQUISA*/
+#boxEsquerdo #boxCamadas #box2 .fundoPesquisa{
+    height: 50px;
+    padding: 10px;
+
+}
+
+#boxEsquerdo #boxCamadas #box2 .fundoPesquisa form{
+    /* margin-left: 60px; */
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#boxEsquerdo #boxCamadas #box2 .fundoPesquisa form input{
+    background-color: transparent;
+    border: none;
+    width: 85%;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #636363;
+    outline: none;
+}
+
+#boxEsquerdo #boxCamadas #box2 .fundoPesquisa button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 13%;
+}
+
+#boxEsquerdo #boxCamadas #box2 .fundoPesquisa button i{
+    color: #0052f3;
+    font-size: 20px;
+    line-height: 50px;
+    width: 100%;
+}
+
+#boxEsquerdo #boxCamadas #box2 .fundoPesquisa button:hover{
+    background-color: #0052f3;
+    color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+#boxEsquerdo #boxCamadas #box2 .fundoPesquisa i:hover{
+    color: white; 
+}
+
+/* ESTILO BOX2 - RESULTADOS*/
+#boxEsquerdo #boxCamadas #box2 #valorResultados{
+    color: #0052f3;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+#boxEsquerdo #boxCamadas #box2 #valorResultados #textoResultados{
+    color: #636363;
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: 200;
+}
+
+/* ESTILO BOX3 */
+#boxEsquerdo #boxCamadas #box3{
+    position: absolute;
+    padding: 20px;
+    border-top: solid 2px #dedede;
+    width: 100%;
+    height: calc(100% - 190px);
+}
+
+/* ESTILO BOX3 - LISTA */
+#boxEsquerdo #boxCamadas #box3 ul{
+    height: 100%;
+    overflow: scroll;
+    
+}
+
+#boxEsquerdo #boxCamadas #box3 ul #item2, #boxEsquerdo #boxCamadas #box3 ul #item3{
+    margin: 0;
+    padding: 0;
+    /* Comando para zerar os valores, pois usei o mesmo nome em outro local do código */
+}
+
+
+#boxEsquerdo #boxCamadas #box3 ul li{
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: max-content 20px !important;
+    justify-items: left;
+    align-items: center;
+    justify-self: auto;
+    color: #0052f3;
+    font-weight: 400;
+    margin-bottom: 15px !important;
+    
+}
+
+
+#boxEsquerdo #boxCamadas #box3 ul li a{
+    color: #0052f3;
+    margin-left: 3px !important;
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li a[aria-label]::after{
+    position: absolute !important;
+    top: 10px;
+    right: 15px;
+    width: max-content;
+    background-color: white;
+}
+
+/* ESTILO BOX3 - SWITCH */
+#boxEsquerdo #boxCamadas #box3 ul li .switch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li .switch .switch-wrapper{
+    display: inline-block;
+    width: 22px;
+    height: 13px;
+    position: relative;
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li .switch .switch-wrapper input{
+    display: none;
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li .switch .switch-wrapper .switch-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #636363;
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li .switch .switch-wrapper .switch-button::before{
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 1px;
+    border-radius: 50%;
+    transition: .4s all ease;
+    background-color: white;
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li .switch .switch-wrapper input:checked + .switch-button{
+    background-color: #0052f3;
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li .switch .switch-wrapper input:checked + .switch-button::before{
+    transform: translateX(9px);
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li .switch .switch-texto{
+    margin-left: 5px;
+}
+
+/* ESTILO BOX3 - SUB-MENU */
+#boxEsquerdo #boxCamadas #box3 ul li #sub-menu-item1.active{
+    /* display: none; */
+    display: block;
+    padding: 5px 15px;
+    margin-top: 8px;
+
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li #sub-menu-item1{
+    /* display: block; */
+    display: none;
+}
+
+/* ESTILO BOX3 - LINHA QUE LIGA A LISTA */
+#boxEsquerdo #boxCamadas #box3 ul #item1::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    width: 2px;
+    height: 222px;
+    background: #dedede;
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li #sub-menu li::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 25px;
+    width: 5px;
+    height: 2px;
+    background: #dedede;
+}
