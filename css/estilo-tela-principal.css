@@ -29,11 +29,26 @@
     }
 }
 
+@keyframes aninFundo {
+    from{
+        opacity: 0;
+        
+        /* transition: ease-out; */
+    }
+    to{
+        background-image: url('/img/foto-satelite.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1;
+    }
+}
+
 body{
-    background-image: url('/img/logo-g.png');
+    background-image: url('/img/background-logo.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 400px;
+    /* background-size: 400px; */
 }
 
 /* CONTAINER PARA COLOCAR A IMAGEM DE FUNDO */

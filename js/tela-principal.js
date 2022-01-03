@@ -23,53 +23,71 @@ const boxCamadas = document.querySelector('#boxCamadas');
 const boxImagens = document.querySelector('#boxImagens');
 const boxComparar = document.querySelector('#boxComparar');
 
-
+btnCamadas.addEventListener('click', menuBoxCamadas);
 function menuBoxCamadas(){
     lateralEsquerda.classList.toggle('active');
     boxCamadas.classList.toggle('active');
 
-    // boxImagens.classList.remove('active');
-    // boxComparar.classList.remove('active');
 }
 
-btnCamadas.addEventListener('click', menuBoxCamadas);
 
+btnImagens.addEventListener('click', menuBoxImagens);
 function menuBoxImagens(){
     lateralEsquerda.classList.toggle('active');
     boxImagens.classList.toggle('active');
 
-    // boxCamadas.classList.remove('active');
-    // boxComparar.classList.remove('active');
 }
 
-btnImagens.addEventListener('click', menuBoxImagens);
 
+btnComparar.addEventListener('click', menuBoxComparar);
 function menuBoxComparar(){
     
     lateralEsquerda.classList.toggle('active');
     boxComparar.classList.toggle('active');
 
-    // boxCamadas.classList.remove('active');
-    // boxComparar.classList.remove('active');
+    
+
 }
 
-btnComparar.addEventListener('click', menuBoxComparar);
+
+/** =========================================================================
+ ** AÇÕES DO MENU ESQUERDO - BOTÃO FECHAR BOX
+ ** ========================================================================*/
+ const btnFechar = document.querySelector('#btnFechar');
+
+ btnFechar.addEventListener('click', fecharBox);
+ function fecharBox(){
+     lateralEsquerda.classList.remove('active');
+     boxCamadas.classList.remove('active');
+     boxImagens.classList.remove('active');
+     boxComparar.classList.remove('active');
+     
+ }
+
 
 /** =========================================================================
  ** AÇÕES DO MENU ESQUERDO - BOTÃO EXIBIR SUB-MENU
  ** ========================================================================*/
 const btnExibir = document.querySelector('#btnExibir');
+const subMenuItem1 = document.querySelector('#camada-sub-menu-item1');
 
-
+btnExibir.addEventListener('click', exibirSubMenu);
 
 function exibirSubMenu(){
-    const subMenuItem1 = document.querySelector('#sub-menu-item1');
     subMenuItem1.classList.toggle('active');
-    console.log(subMenuItem1);
-    console.log('Clicou');
 }
 
-btnExibir.addEventListener('click', exibirSubMenu());
+const btnExibirSub2 = document.querySelector('#btnExibirSub2');
+const subMenu2Item1 = document.querySelector('#camada-sub-menu2-item1-1');
+
+
+btnExibirSub2.addEventListener('click', exibirSubMenu2);
+
+function exibirSubMenu2(){
+    subMenu2Item1.classList.toggle('active');
+}
+
+
 
 
 /** =========================================================================

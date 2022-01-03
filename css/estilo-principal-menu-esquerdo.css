@@ -109,6 +109,30 @@
 
 
 
-
+/** =========================================================================
+ ** AÇÕES DO MENU ESQUERDO - ANIMAÇÕES BOX MENU
+ ** ========================================================================*/
 
  
+@keyframes fadeBox {
+    from{
+        width: 0;
+        opacity: -10;
+    }
+    to{
+        width: 330px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeBoxVoltar {
+    from{
+        width: 330px;
+        opacity: 1;
+    }
+    to{
+        transition: .5s;
+        width: 0;
+        opacity: 0;
+    }
+}

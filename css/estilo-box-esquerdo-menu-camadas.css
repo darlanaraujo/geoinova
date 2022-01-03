@@ -17,29 +17,6 @@
     transition: .5s;
 }
 
-@keyframes fadeBox {
-    from{
-        width: 0;
-        opacity: -10;
-    }
-    to{
-        width: 300px;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeBoxVoltar {
-    from{
-        width: 350px;
-        opacity: 1;
-    }
-    to{
-        transition: .5s;
-        width: 0;
-        opacity: 0;
-    }
-}
-
  .containerPrincipal #lateralEsquerda.active #boxEsquerdo #boxCamadas.active{
     animation: fadeBox .5s .5s forwards;
  }
@@ -194,28 +171,36 @@
 #boxEsquerdo #boxCamadas #box3 ul li{
     /* position: relative; */
     display: grid;
-    grid-template-columns: max-content 20px !important;
+    grid-template-columns: auto 20px;
+    justify-content: left;
     justify-items: left;
     align-items: center;
     justify-self: auto;
     color: #0052f3;
     font-weight: 400;
-    margin-bottom: 15px !important;
+    margin-bottom: 7px !important;
+
     
 }
 
-
-#boxEsquerdo #boxCamadas #box3 ul li a{
+#boxEsquerdo #boxCamadas #box3 ul li button{
+    background: none;
+    border: none;
     color: #0052f3;
-    margin-left: 3px !important;
+    width: 25px;
+    height: 25px;
     font-size: 20px;
-    margin-top: -5px;
+    cursor: pointer;
 }
 
-#boxEsquerdo #boxCamadas #box3 ul li a[aria-label]::after{
+#boxEsquerdo #boxCamadas #box3 ul li button:hover{
+    color: #636363;
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li button[aria-label]::after{
     position: absolute !important;
     top: 10px;
-    right: 15px;
+    right: 25px;
     width: max-content;
     background-color: white;
 }
@@ -276,32 +261,33 @@
 }
 
 /* ESTILO BOX3 - SUB-MENU */
-#boxEsquerdo #boxCamadas #box3 ul li #sub-menu-item1.active{
-    /* display: none; */
-    display: block;
-    padding: 5px 15px;
-    margin-top: 8px;
 
+#boxEsquerdo #boxCamadas #box3 ul li #camada-sub-menu-item1.active{
+    display: block;
+    /* padding: 5px 15px; */
+    padding-left: 15px;
+    margin-top: 20px;
+    transition: .5s;
+    position: relative;
 }
 
-#boxEsquerdo #boxCamadas #box3 ul li #sub-menu-item1{
-    /* display: block; */
+#boxEsquerdo #boxCamadas #box3 ul li #camada-sub-menu-item1{
     display: none;
 }
 
 /* ESTILO BOX3 - LINHA QUE LIGA A LISTA */
-#boxEsquerdo #boxCamadas #box3 ul #item1::before{
+/* #boxEsquerdo #boxCamadas #box3 ul::before{
     content: '';
     display: block;
     position: absolute;
     top: 40px;
     left: 25px;
     width: 2px;
-    height: 222px;
+    height: calc(30px * 6.4);
     background: #dedede;
-}
+} */
 
-#boxEsquerdo #boxCamadas #box3 ul li #sub-menu li::before{
+/* #boxEsquerdo #boxCamadas #box3 ul li::before{
     content: '';
     display: block;
     position: absolute;
@@ -309,4 +295,17 @@
     width: 5px;
     height: 2px;
     background: #dedede;
+} */
+
+/* ESTILO BOX3 - SUB-MENU 2 */
+#boxEsquerdo #boxCamadas #box3 ul li #camada-sub-menu-item1.active #camada-sub-menu2-item1-1.active{
+    display: block;
+    padding: 5px 15px;
+    margin-top: 8px;
+    transition: .5s;
+
+}
+
+#boxEsquerdo #boxCamadas #box3 ul li #camada-sub-menu-item1 #camada-sub-menu2-item1-1{
+    display: none;
 }

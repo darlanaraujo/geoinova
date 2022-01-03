@@ -17,29 +17,6 @@
     transition: .5s;
 }
 
-@keyframes fadeBox {
-    from{
-        width: 0;
-        opacity: -10;
-    }
-    to{
-        width: 300px;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeBoxVoltar {
-    from{
-        width: 350px;
-        opacity: 1;
-    }
-    to{
-        transition: .5s;
-        width: 0;
-        opacity: 0;
-    }
-}
-
  .containerPrincipal #lateralEsquerda.active #boxEsquerdo #boxComparar.active{
     animation: fadeBox .5s .5s forwards;
  }
