@@ -3,12 +3,10 @@
  ** ========================================================================*/
  .containerPrincipal #lateralEsquerda #boxEsquerdo #boxCamadas{
     opacity: 0;
-    z-index: 999 !important;
     animation: fadeBoxVoltar .5s forwards;
     position: absolute;
     top: 0px;
     left: 73px;
-    z-index: 1099;
     background-color: #eeeeee;
     border-radius: 0 10px 10px 0;
     border-left: solid 2px #dedede;
@@ -19,6 +17,7 @@
 
  .containerPrincipal #lateralEsquerda.active #boxEsquerdo #boxCamadas.active{
     animation: fadeBox .5s .5s forwards;
+    z-index: 1000;
  }
 
  

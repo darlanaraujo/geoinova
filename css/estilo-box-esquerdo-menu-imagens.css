@@ -3,12 +3,10 @@
  ** ========================================================================*/
  .containerPrincipal #lateralEsquerda #boxEsquerdo #boxImagens{
     opacity: 0;
-    z-index: 999 !important;
     animation: fadeBoxVoltar .5s forwards;
     position: absolute;
     top: 0px;
     left: 73px;
-    z-index: 1099;
     background-color: #eeeeee;
     border-radius: 0 10px 10px 0;
     border-left: solid 2px #dedede;
@@ -19,6 +17,7 @@
 
  .containerPrincipal #lateralEsquerda.active #boxEsquerdo #boxImagens.active{
     animation: fadeBox .5s .5s forwards;
+    z-index: 1000;
  }
 
  
@@ -119,7 +118,7 @@
     width: 100%;
     height: calc(100% - 190px);
     /* border: solid 1px red; */
-    position: relative;
+    position: absolute;
     overflow: auto;
 }
 
@@ -127,7 +126,6 @@
 #boxEsquerdo #boxImagens #box3 #boxFiltros{
     position: absolute;
     top: 0px;
-    /* padding: 20px; */
     opacity: 0;
     width: 0;
     transition: .5s;
@@ -136,7 +134,6 @@
 
 #boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-data{
     text-align: center;
-    /* margin-bottom: 20px; */
     padding: 20px;
 
 }
@@ -244,7 +241,7 @@
 
 /* ESTILO FAVORITOS */
 #boxEsquerdo #boxImagens #box3 #boxFavoritos{
-    position: absolute;
+    position: relative;
     top: 0px;
     padding: 20px;
     opacity: 0;
@@ -259,14 +256,14 @@
 }
 
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos  #img-favorito img{
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens  .img-favorito > img{
     width: 100%;
     border-radius: 10px;
     text-align: center;
-    position: relative;
+    position: relative !important;
 }
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #btnMarcarFavorito{
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .btnMarcarFavorito{
     position: absolute;
     top: 30px;
     left: 35px;
@@ -278,7 +275,7 @@
     cursor: pointer;
 }
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #btnMarcarFavorito[aria-label]::after{
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .btnMarcarFavorito[aria-label]::after{
     position: absolute;
     top: 30px;
     left: 0px;
@@ -286,26 +283,60 @@
 }
 
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #btnMarcarFavorito:hover{
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .btnMarcarFavorito:hover{
     color: yellow;
 }
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #btnMarcarFavorito.active{
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .btnMarcarFavorito.active{
     color: yellow;
 }
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #img-texto{
+/* ESTILO DO TEXTO SOBRE A FOTO */
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .img-texto-baixa-resolucao{
     position: absolute;
     top: 30px;
     right: 35px;
 
-    background-color: aqua;
+    background-color: #00cec6;
     color: white;
     padding: 3px 8px;
     border-radius: 5px;
 }
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #img-data{
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .img-texto-alta-resolucao{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+
+    background-color: #0052f3;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .img-texto-monitoramento{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+
+    background-color: #00d46b;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .img-texto-upload{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+
+    background-color: #7b28ca;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .img-data{
     position: absolute;
     right: 35px;
     top: 130px;
@@ -314,7 +345,7 @@
     font-weight: bold;
 }
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos .linhas{
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .linhas{
     display: flex;
     color: #636363;
     justify-items: center;
@@ -324,7 +355,7 @@
     padding-top: 10px;
 }
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos .quebra-linha{
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .quebra-linha{
     display: flex;
 }
 
