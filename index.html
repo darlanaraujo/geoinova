@@ -361,24 +361,63 @@
                             <button id="btnFavoritos" class="active"><i class="far fa-star"></i>Favoritos</button>
                         </div>
 
+
+                        
+
                         <div id="box3">
 
                             <div id="boxFiltros">
-                                filtros
+
+                                <div id="box-filtros-data">
+                                    <p>De:</p>
+                                    <input type="date" name="" id="data-inicio">
+                                    
+                                    <p>Até:</p>
+                                    <input type="date" name="" id="data-fim">
+                                </div>
+
+                                <div id="box-filtros-fonte-imagem">
+                                    
+                                    <div id="box-filtros-fonte-btn"></div>
+                                    <div id="titulo">
+                                        <i class="far fa-images"></i>
+                                        <p>Fonte da imagem</p>
+                                    </div>
+                                    <button class="btn-filtros-imagens" id="btnBaixaResolucao">Baixa resolução</button>
+                                    <button class="btn-filtros-imagens" id="btnAltaResolucao">Alta resolução</button>
+                                    <button class="btn-filtros-imagens" id="btnUpload">Upload</button>
+                                    <button class="btn-filtros-imagens" id="btnMonitoramento">Monitoramento</button>
+                                </div>
+
+                                <div id="box-filtros-nuvens">
+
+                                    <div id="titulo">
+                                        <i class="fas fa-cloud"></i>
+                                        <p>Porcentagens das nuves</p>
+                                    </div>
+
+                                    <input type="range" name="porcentagem" id="porcentagem">
+                                </div>
+
+                                <div id="box-filtros-botoes">
+                                    <button id="btnDescartar">Descartar</button>
+                                    <button id="btnFiltrar">Filtrar</button>
+                                </div>
+                                
                             </div>
 
                             <div id="boxFavoritos" class="active">
+
+                                <!-- ITEM 1 -->
                                 <div class="box-favoritos-itens">
+
                                     <figure id="img-favorito">
                                         <img src="img/foto-satelite.png" alt="">
-                                    </figure>
 
-                                    
-                                    <div class="capa-img">
-                                        <button id="btnMarcarFavorito"><i class="fas fa-star"></i></button>
-                                        <p id="img-texto">Baixa Resolução</p>
+                                        <button id="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa resolução</p>
                                         <p id="img-data">21/12/2021</p>
-                                    </div>
+                                    </figure>
                                     
                                     <div class="linhas" id="linha1">
                                         <i class="fas fa-satellite-dish"></i>
@@ -395,13 +434,260 @@
                                             <p>3m/px Alta</p>
                                         </div>
                                     </div>
-                                   
-                                    <div class="box-favoritos-dados">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
+                                </div>
+
+                                <!-- ITEM 2 -->
+                                <div class="box-favoritos-itens">
+
+                                    <figure id="img-favorito">
+                                        <img src="img/foto-satelite.png" alt="">
+
+                                        <!-- <button id="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa resolução</p>
+                                        <p id="img-data">21/12/2021</p> -->
+                                    </figure>
+                                    
+                                    <div class="linhas" id="linha1">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <p>Planet Scope 001 - 4 Band</p>
+                                    </div>
+
+                                    <div class="quebra-linha">
+                                        <div class="linhas" id="linha2">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>36% Nublado</p>
+                                        </div>
+                                        <div class="linhas" id="linha3">
+                                            <i class="far fa-image"></i>
+                                            <p>3m/px Alta</p>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <!-- ITEM 2 -->
+                                <div class="box-favoritos-itens">
+
+                                    <figure id="img-favorito">
+                                        <img src="img/foto-satelite.png" alt="">
+
+                                        <!-- <button id="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa resolução</p>
+                                        <p id="img-data">21/12/2021</p> -->
+                                    </figure>
+                                    
+                                    <div class="linhas" id="linha1">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <p>Planet Scope 001 - 4 Band</p>
+                                    </div>
+
+                                    <div class="quebra-linha">
+                                        <div class="linhas" id="linha2">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>36% Nublado</p>
+                                        </div>
+                                        <div class="linhas" id="linha3">
+                                            <i class="far fa-image"></i>
+                                            <p>3m/px Alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ITEM 2 -->
+                                <div class="box-favoritos-itens">
+
+                                    <figure id="img-favorito">
+                                        <img src="img/foto-satelite.png" alt="">
+
+                                        <!-- <button id="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa resolução</p>
+                                        <p id="img-data">21/12/2021</p> -->
+                                    </figure>
+                                    
+                                    <div class="linhas" id="linha1">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <p>Planet Scope 001 - 4 Band</p>
+                                    </div>
+
+                                    <div class="quebra-linha">
+                                        <div class="linhas" id="linha2">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>36% Nublado</p>
+                                        </div>
+                                        <div class="linhas" id="linha3">
+                                            <i class="far fa-image"></i>
+                                            <p>3m/px Alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ITEM 2 -->
+                                <div class="box-favoritos-itens">
+
+                                    <figure id="img-favorito">
+                                        <img src="img/foto-satelite.png" alt="">
+
+                                        <!-- <button id="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa resolução</p>
+                                        <p id="img-data">21/12/2021</p> -->
+                                    </figure>
+                                    
+                                    <div class="linhas" id="linha1">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <p>Planet Scope 001 - 4 Band</p>
+                                    </div>
+
+                                    <div class="quebra-linha">
+                                        <div class="linhas" id="linha2">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>36% Nublado</p>
+                                        </div>
+                                        <div class="linhas" id="linha3">
+                                            <i class="far fa-image"></i>
+                                            <p>3m/px Alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ITEM 2 -->
+                                <div class="box-favoritos-itens">
+
+                                    <figure id="img-favorito">
+                                        <img src="img/foto-satelite.png" alt="">
+
+                                        <!-- <button id="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa resolução</p>
+                                        <p id="img-data">21/12/2021</p> -->
+                                    </figure>
+                                    
+                                    <div class="linhas" id="linha1">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <p>Planet Scope 001 - 4 Band</p>
+                                    </div>
+
+                                    <div class="quebra-linha">
+                                        <div class="linhas" id="linha2">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>36% Nublado</p>
+                                        </div>
+                                        <div class="linhas" id="linha3">
+                                            <i class="far fa-image"></i>
+                                            <p>3m/px Alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ITEM 2 -->
+                                <div class="box-favoritos-itens">
+
+                                    <figure id="img-favorito">
+                                        <img src="img/foto-satelite.png" alt="">
+
+                                        <!-- <button id="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa resolução</p>
+                                        <p id="img-data">21/12/2021</p> -->
+                                    </figure>
+                                    
+                                    <div class="linhas" id="linha1">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <p>Planet Scope 001 - 4 Band</p>
+                                    </div>
+
+                                    <div class="quebra-linha">
+                                        <div class="linhas" id="linha2">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>36% Nublado</p>
+                                        </div>
+                                        <div class="linhas" id="linha3">
+                                            <i class="far fa-image"></i>
+                                            <p>3m/px Alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ITEM 2 -->
+                                <div class="box-favoritos-itens">
+
+                                    <figure id="img-favorito">
+                                        <img src="img/foto-satelite.png" alt="">
+
+                                        <!-- <button id="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa resolução</p>
+                                        <p id="img-data">21/12/2021</p> -->
+                                    </figure>
+                                    
+                                    <div class="linhas" id="linha1">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <p>Planet Scope 001 - 4 Band</p>
+                                    </div>
+
+                                    <div class="quebra-linha">
+                                        <div class="linhas" id="linha2">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>36% Nublado</p>
+                                        </div>
+                                        <div class="linhas" id="linha3">
+                                            <i class="far fa-image"></i>
+                                            <p>3m/px Alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ITEM 2 -->
+                                <div class="box-favoritos-itens">
+
+                                    <figure id="img-favorito">
+                                        <img src="img/foto-satelite.png" alt="">
+
+                                        <!-- <button id="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa resolução</p>
+                                        <p id="img-data">21/12/2021</p> -->
+                                    </figure>
+                                    
+                                    <div class="linhas" id="linha1">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <p>Planet Scope 001 - 4 Band</p>
+                                    </div>
+
+                                    <div class="quebra-linha">
+                                        <div class="linhas" id="linha2">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>36% Nublado</p>
+                                        </div>
+                                        <div class="linhas" id="linha3">
+                                            <i class="far fa-image"></i>
+                                            <p>3m/px Alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ITEM 2 -->
+                                <div class="box-favoritos-itens">
+
+                                    <figure id="img-favorito">
+                                        <img src="img/foto-satelite.png" alt="">
+
+                                        <!-- <button id="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa resolução</p>
+                                        <p id="img-data">21/12/2021</p> -->
+                                    </figure>
+                                    
+                                    <div class="linhas" id="linha1">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <p>Planet Scope 001 - 4 Band</p>
+                                    </div>
+
+                                    <div class="quebra-linha">
+                                        <div class="linhas" id="linha2">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>36% Nublado</p>
+                                        </div>
+                                        <div class="linhas" id="linha3">
+                                            <i class="far fa-image"></i>
+                                            <p>3m/px Alta</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </section>

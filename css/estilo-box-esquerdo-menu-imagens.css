@@ -115,9 +115,6 @@
 
 /* ESTILO BOX3 */
 #boxEsquerdo #boxImagens #box3{
-    /* position: absolute; */
-    /* padding: 20px; */
-
     border-top: solid 2px #dedede;
     width: 100%;
     height: calc(100% - 190px);
@@ -126,18 +123,122 @@
     overflow: auto;
 }
 
-
 /* ESTILO FILTROS */
 #boxEsquerdo #boxImagens #box3 #boxFiltros{
     position: absolute;
     top: 0px;
-    padding: 20px;
+    /* padding: 20px; */
     opacity: 0;
+    width: 0;
+    transition: .5s;
 
 }
 
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-data{
+    text-align: center;
+    /* margin-bottom: 20px; */
+    padding: 20px;
+
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-data > p{
+    color: red;
+    margin-bottom: 10px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-data > input{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-fonte-imagem{
+    border-top: solid 2px #dedede;
+    padding: 20px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-fonte-imagem #titulo{
+    display: flex;
+    color: #0052f3;
+    gap: 3px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-fonte-imagem > button{
+    background: none;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: #636363;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-fonte-imagem > button:hover{
+    background-color: #0052f3;
+}
+
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-nuvens{
+    border-top: solid 2px #dedede;
+    padding: 20px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-nuvens #titulo{
+    display: flex;
+    color: #0052f3;
+    gap: 3px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-nuvens > input{
+    width: 100%;
+}
+
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-botoes{
+    border-top: solid 2px #dedede;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-botoes > button{
+    background: none;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-botoes #btnDescartar{
+    background-color: #e05157;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-botoes #btnDescartar:hover{
+    background-color: #b62a31;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-botoes #btnFiltrar{
+    background-color: #4bc673;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros #box-filtros-botoes #btnFiltrar:hover{
+    background-color: #29a552;
+}
+
 #boxEsquerdo #boxImagens #box3 #boxFiltros.active{
+    width: 100%;
     opacity: 1;
+    z-index: 1000;
+    
 }
 
 
@@ -147,17 +248,70 @@
     top: 0px;
     padding: 20px;
     opacity: 0;
+    width: 0;
+    transition: .5s;
 }
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito img{
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens{
+    margin-bottom: 30px;
+    
+}
+
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos  #img-favorito img{
     width: 100%;
     border-radius: 10px;
     text-align: center;
     position: relative;
 }
 
-#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito img .capa-img{
-    display: none;
+#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #btnMarcarFavorito{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.705);
+    cursor: pointer;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #btnMarcarFavorito[aria-label]::after{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: max-content;
+}
+
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #btnMarcarFavorito:hover{
+    color: yellow;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #btnMarcarFavorito.active{
+    color: yellow;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #img-texto{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+
+    background-color: aqua;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito #img-data{
+    position: absolute;
+    right: 35px;
+    top: 130px;
+
+    color: white;
+    font-weight: bold;
 }
 
 #boxEsquerdo #boxImagens #box3 #boxFavoritos .linhas{
@@ -176,4 +330,7 @@
 
 #boxEsquerdo #boxImagens #box3 #boxFavoritos.active{
     opacity: 1;
+    width: 100%;
+    z-index: 1000;
+    
 }
