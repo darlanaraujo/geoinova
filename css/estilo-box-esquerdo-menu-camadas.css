@@ -174,7 +174,7 @@
     grid-template-columns: auto 20px;
     justify-content: left;
     justify-items: left;
-    align-items: center;
+    /* align-items: center; */
     justify-self: auto;
     color: #0052f3;
     font-weight: 400;

@@ -53,9 +53,13 @@ function menuBoxComparar(){
 /** =========================================================================
  ** AÇÕES DO MENU ESQUERDO - BOTÃO FECHAR BOX
  ** ========================================================================*/
- const btnFechar = document.querySelector('#btnFechar');
+ const btnFechar = document.querySelectorAll('#btnFechar');
 
- btnFechar.addEventListener('click', fecharBox);
+ btnFechar.forEach((event) => {
+     event.addEventListener('click', fecharBox);
+ })
+
+//  btnFechar.addEventListener('click', fecharBox);
  function fecharBox(){
      lateralEsquerda.classList.remove('active');
      boxCamadas.classList.remove('active');

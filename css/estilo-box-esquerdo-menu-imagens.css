@@ -70,3 +70,52 @@
     right: 25px;
     width: max-content;
 }
+
+
+/* ESTILO BOX2 */
+#boxEsquerdo #boxImagens #box2{
+    /* padding: 20px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    height: 70px;
+    border-top: solid 2px #dedede;
+    
+}
+
+/* ESTILO BOX2 - BOTÕES */
+#boxEsquerdo #boxImagens #box2 button{
+    background: none;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: #636363;
+}
+
+#boxEsquerdo #boxImagens #box2 button:hover{
+    color: #0052f3;
+}
+
+#boxEsquerdo #boxImagens #box2 button i{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+#boxEsquerdo #boxImagens #box2 button#btnFavoritos{
+    border-left: solid 2px #dedede;
+}
+
+
+/* ESTILO BOX3 */
+#boxEsquerdo #boxImagens #box3{
+    position: absolute;
+    padding: 20px;
+    border-top: solid 2px #dedede;
+    width: 100%;
+    height: calc(100% - 190px);
+    border: solid 1px red;
+    
+}

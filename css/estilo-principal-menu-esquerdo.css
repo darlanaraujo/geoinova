@@ -17,7 +17,7 @@
     opacity: 0;
     z-index: 1100 !important;
     animation: fadeEsquerdo 1s 3s forwards;
-    position: absolute;
+    position: absolute !important;
     top: 150px;
     height: 350px;
     background: #eeeeee;
@@ -88,7 +88,7 @@
     background: none;
     border: none;
     color: #636363;
-
+    z-index: 2100 !important;
     width: 50px;
     height: 50px;
     margin: 20px 0;
@@ -127,7 +127,7 @@
 
 @keyframes fadeBoxVoltar {
     from{
-        width: 330px;
+        width: 350px;
         opacity: 1;
     }
     to{
