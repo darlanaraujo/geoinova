@@ -96,6 +96,10 @@
     cursor: pointer;
 }
 
+#menuEsquerdo button#btnCamadas.active, #menuEsquerdo button#btnImagens.active, #menuEsquerdo button#btnComparar.active{
+    color: #0052f3;
+}
+
 .containerPrincipal #lateralEsquerda #menuEsquerdo button:hover, button:active{
     color: #0052f3;
 }
@@ -118,10 +122,12 @@
     from{
         width: 0;
         opacity: -10;
+        transition: .5s;
     }
     to{
         width: 330px;
         opacity: 1;
+        transition: .5s;
     }
 }
 
@@ -129,9 +135,10 @@
     from{
         width: 350px;
         opacity: 1;
+        transition: 1s;
     }
     to{
-        transition: .5s;
+        transition: 1s;
         width: 0;
         opacity: 0;
     }

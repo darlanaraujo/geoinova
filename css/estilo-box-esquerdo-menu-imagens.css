@@ -108,14 +108,72 @@
     border-left: solid 2px #dedede;
 }
 
+#boxImagens #box2 button#btnFiltros.active, #boxImagens #box2 button#btnFavoritos.active{
+    color: #0052f3;
+}
+
 
 /* ESTILO BOX3 */
 #boxEsquerdo #boxImagens #box3{
-    position: absolute;
-    padding: 20px;
+    /* position: absolute; */
+    /* padding: 20px; */
+
     border-top: solid 2px #dedede;
     width: 100%;
     height: calc(100% - 190px);
-    border: solid 1px red;
-    
+    /* border: solid 1px red; */
+    position: relative;
+    overflow: auto;
+}
+
+
+/* ESTILO FILTROS */
+#boxEsquerdo #boxImagens #box3 #boxFiltros{
+    position: absolute;
+    top: 0px;
+    padding: 20px;
+    opacity: 0;
+
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFiltros.active{
+    opacity: 1;
+}
+
+
+/* ESTILO FAVORITOS */
+#boxEsquerdo #boxImagens #box3 #boxFavoritos{
+    position: absolute;
+    top: 0px;
+    padding: 20px;
+    opacity: 0;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito img{
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos #img-favorito img .capa-img{
+    display: none;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .linhas{
+    display: flex;
+    color: #636363;
+    justify-items: center;
+    /* font-size: 14px; */
+    gap: 5px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .quebra-linha{
+    display: flex;
+}
+
+#boxEsquerdo #boxImagens #box3 #boxFavoritos.active{
+    opacity: 1;
 }

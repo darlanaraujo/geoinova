@@ -25,8 +25,10 @@ const boxComparar = document.querySelector('#boxComparar');
 
 btnCamadas.addEventListener('click', menuBoxCamadas);
 function menuBoxCamadas(){
+    
     lateralEsquerda.classList.toggle('active');
     boxCamadas.classList.toggle('active');
+    btnCamadas.classList.toggle('active');
 
 }
 
@@ -35,7 +37,7 @@ btnImagens.addEventListener('click', menuBoxImagens);
 function menuBoxImagens(){
     lateralEsquerda.classList.toggle('active');
     boxImagens.classList.toggle('active');
-
+    btnImagens.classList.toggle('active');
 }
 
 
@@ -44,9 +46,7 @@ function menuBoxComparar(){
     
     lateralEsquerda.classList.toggle('active');
     boxComparar.classList.toggle('active');
-
-    
-
+    btnComparar.classList.toggle('active');
 }
 
 
@@ -65,6 +65,10 @@ function menuBoxComparar(){
      boxCamadas.classList.remove('active');
      boxImagens.classList.remove('active');
      boxComparar.classList.remove('active');
+
+     btnCamadas.classList.remove('active');
+     btnImagens.classList.remove('active');
+     btnComparar.classList.remove('active');
      
  }
 
@@ -92,7 +96,35 @@ function exibirSubMenu2(){
 }
 
 
+/** =========================================================================
+ ** AÇÕES DO MENU ESQUERDO - IMAGENS
+ ** ========================================================================*/
+const btnFiltros = document.querySelector('#btnFiltros');
+const btnFavoritos = document.querySelector('#btnFavoritos');
 
+const boxFiltros = document.querySelector('#boxFiltros');
+const boxFavoritos = document.querySelector('#boxFavoritos');
+
+btnFiltros.addEventListener('click', subMenuImagensFiltros);
+btnFavoritos.addEventListener('click', subMenuImagensFavoritos);
+
+function subMenuImagensFiltros(){
+    
+    boxFiltros.classList.toggle('active');
+    boxFavoritos.classList.remove('active');
+
+    btnFiltros.classList.add('active');
+    btnFavoritos.classList.remove('active');
+}
+
+function subMenuImagensFavoritos(){
+    
+    boxFavoritos.classList.toggle('active');
+    boxFiltros.classList.remove('active');
+
+    btnFavoritos.classList.add('active');
+    btnFiltros.classList.remove('active');
+}
 
 /** =========================================================================
  ** CAPTURA DA POSIÇÃO DO MOUSE NA TELA

@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Importação do Estilo -->
-    <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="stylesheet" href="/css/estilo-tela-principal.css">
-    <link rel="stylesheet" href="/css/estilo-principal-menu-direito.css">
-    <link rel="stylesheet" href="/css/estilo-principal-menu-esquerdo.css">
-    <link rel="stylesheet" href="/css/estilo-box-esquerdo-menu-camadas.css">
-    <link rel="stylesheet" href="/css/estilo-box-esquerdo-menu-imagens.css">
-    <link rel="stylesheet" href="/css/estilo-box-esquerdo-menu-comparar.css">
-    <link rel="stylesheet" href="/css/estilo-principal-footer.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo-tela-principal.css">
+    <link rel="stylesheet" href="css/estilo-principal-menu-direito.css">
+    <link rel="stylesheet" href="css/estilo-principal-menu-esquerdo.css">
+    <link rel="stylesheet" href="css/estilo-box-esquerdo-menu-camadas.css">
+    <link rel="stylesheet" href="css/estilo-box-esquerdo-menu-imagens.css">
+    <link rel="stylesheet" href="css/estilo-box-esquerdo-menu-comparar.css">
+    <link rel="stylesheet" href="css/estilo-principal-footer.css">
 
     <!-- Importação JS -->
-    <script src="./js/tela-principal.js" defer></script>
+    <script src="js/tela-principal.js" defer></script>
 
     <!-- Importação Fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <!--Icone do navegador-->
-    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 
     <title>GeoInova - Tela Principal</title>
 </head>
@@ -46,7 +46,7 @@
         <section class="topo">
             <header class="headerMenu">
                 <figure class="logo">
-                    <img src="/img/icon-azul.png" alt="[Logo/Icone Geoinova]" title="Logo/Icone Geoinova" id="iconeLogo">
+                    <img src="img/icon-azul.png" alt="[Logo/Icone Geoinova]" title="Logo/Icone Geoinova" id="iconeLogo">
                 </figure>
 
                 <div class="fundoPesquisa">
@@ -74,7 +74,7 @@
                 <div class="dadosUsuario">
 
                     <figure class="fotoUsuario">
-                        <img src="/img/foto-usuario.png" alt="">
+                        <img src="img/foto-usuario.png" alt="">
                     </figure>
 
                     <div class="texto">
@@ -89,9 +89,9 @@
 
                 <div id="ajustes">
                     <figure id="bandeiras">
-                        <a href="" aria-label="Portugues"><img src="/img/bandeira-brasil.png" alt=""></a>
-                        <a href="" aria-label="Inglês"><img src="/img/bandeira-reino-unido.png" alt=""></a>
-                        <a href="" aria-label="Espanhol"><img src="/img/bandeira-espanha.png" alt=""></a>
+                        <a href="" aria-label="Portugues"><img src="img/bandeira-brasil.png" alt=""></a>
+                        <a href="" aria-label="Inglês"><img src="img/bandeira-reino-unido.png" alt=""></a>
+                        <a href="" aria-label="Espanhol"><img src="img/bandeira-espanha.png" alt=""></a>
                     </figure>
 
                     <div id="ajustes-box1">
@@ -358,7 +358,7 @@
 
                         <div id="box2">
                             <button id="btnFiltros"><i class="fas fa-sliders-h"></i>Filtros</button>
-                            <button id="btnFavoritos"><i class="far fa-star"></i>Favoritos</button>
+                            <button id="btnFavoritos" class="active"><i class="far fa-star"></i>Favoritos</button>
                         </div>
 
                         <div id="box3">
@@ -367,11 +367,34 @@
                                 filtros
                             </div>
 
-                            <div id="boxFavoritos">
+                            <div id="boxFavoritos" class="active">
                                 <div class="box-favoritos-itens">
                                     <figure id="img-favorito">
-                                        <img src="" alt="">
+                                        <img src="img/foto-satelite.png" alt="">
                                     </figure>
+
+                                    
+                                    <div class="capa-img">
+                                        <button id="btnMarcarFavorito"><i class="fas fa-star"></i></button>
+                                        <p id="img-texto">Baixa Resolução</p>
+                                        <p id="img-data">21/12/2021</p>
+                                    </div>
+                                    
+                                    <div class="linhas" id="linha1">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <p>Planet Scope 001 - 4 Band</p>
+                                    </div>
+
+                                    <div class="quebra-linha">
+                                        <div class="linhas" id="linha2">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>36% Nublado</p>
+                                        </div>
+                                        <div class="linhas" id="linha3">
+                                            <i class="far fa-image"></i>
+                                            <p>3m/px Alta</p>
+                                        </div>
+                                    </div>
                                    
                                     <div class="box-favoritos-dados">
                                         <div></div>

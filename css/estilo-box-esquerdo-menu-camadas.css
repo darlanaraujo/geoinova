@@ -157,7 +157,7 @@
 /* ESTILO BOX3 - LISTA */
 #boxEsquerdo #boxCamadas #box3 ul{
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
     
 }
 
