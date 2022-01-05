@@ -1,294 +1,92 @@
+/** =========================================================================
+ ** AÇÕES DO MENU ESQUERDO
+ ** ========================================================================*/
 
-*{
-    font-family: 'Source Sans Pro', sans-serif;
-}
+.containerPrincipal #lateralDireita{
+    background-color: #eeeeee;
+    border-radius: 10px 0 0 10px;
+    transition: .5s;
 
-@keyframes fadeDireito {
-    from{
-        transform: translate3d(400px, 0, 0);
-        opacity: 0;
-    }
-    to{
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-    }
-}
-
-/* HEADER BOX USUÁRIO */
-.containerPrincipal .topo #headerBoxUsuario{
-    opacity: 0;
-    animation: fadeDireito 1s 2.5s forwards;
-    width: 100%;
-    height: 73px;
-    background-color: #0052f3;
-    border-radius: 8px 0 0 8px;
-    /* padding: 10px; */
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    transition: .6s;
-    position: relative;
-    overflow-y: hidden;
-    
-}
-
-.containerPrincipal .topo #headerBoxUsuario.active{
-    height: 500px;
-    overflow-y: hidden;
-    /* transition: .3s; */
-}
-
-.containerPrincipal .topo #headerBoxUsuario .dadosUsuario{
-    display: flex;
-    
-}
-
-.containerPrincipal .topo #headerBoxUsuario .dadosUsuario .fotoUsuario{
-    margin-left: 25px;
-}
-
-.containerPrincipal .topo #headerBoxUsuario .dadosUsuario .fotoUsuario img{
-    border: solid 2px white;
-    border-radius: 100%;
-    padding: 2px;
-    width: 50px;
-
-}
-
-.containerPrincipal .topo #headerBoxUsuario .dadosUsuario .texto{
-    padding: 12px;
-}
-
-.containerPrincipal .topo #headerBoxUsuario .dadosUsuario .texto p{
-    color: white;
-    /* margin-left: 15px; */
-    
-}
-
-.containerPrincipal .topo #headerBoxUsuario .dadosUsuario .texto #msgUsuario{
-    font-size: 14px;
-    font-weight: 400;
-    
-}
-
-.containerPrincipal .topo #headerBoxUsuario .dadosUsuario .texto #nomeUsuario{
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Heebo', sans-serif;
-    
-}
-
-/* EFEITOS DO BOTÃO */
-.containerPrincipal .topo #headerBoxUsuario #btnBoxUsuario{
-    margin-right: 30px;
-    background: none;
-    color: white;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    /* border: solid 1px red; */
-    position: relative;
-    width: 30px;
-    height: 30px;
-    margin-top: 15px;
-}
-
-.containerPrincipal .topo #headerBoxUsuario #hamburger{
-    width: 30px;
-    border-top: 3px solid white;
-    display: block;
-
-}
-
-#headerBoxUsuario #hamburger::after{
-    content: '';
-    display: block;
-    width: 25px;
-    height: 3px;
     position: absolute;
+    top: 150px;
     right: 0;
-    margin-top: 5px;
-    background: currentColor;
-    transition: .3s;
-}
 
-#headerBoxUsuario #hamburger::before{
-    content: '';
-    display: block;
-    width: 20px;
-    height: 3px;
-    position: absolute;
-    top: 11px;
-    right: 0;
-    margin-top: 5px;
-    background: currentColor;
-    transition: .3s;
-
-}
-
-.containerPrincipal .topo #headerBoxUsuario.active #hamburger{
-    border-top-color: transparent;
-}
-
-.containerPrincipal .topo #headerBoxUsuario.active #hamburger::after{
-    transform: rotate(-135deg);
-    position: relative;
-    top: -7px;
-}
-
-.containerPrincipal .topo #headerBoxUsuario.active #hamburger::before{
-    width: 25px;
-    transform: rotate(135deg);
-    position: relative;
-    top: 0;
-    
-}
-
-/* ANIMAÇÃO BOX AJUSTES */
-.containerPrincipal #headerBoxUsuario #ajustes{
-    position: absolute;
-    top: 70px;
-    /* z-index: 1000; */
-    visibility: hidden;
+    width: 0;
     opacity: 0;
-    width: 100%;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.50);
-    transition: .6s;
+    height: calc(100vh - 250px);
+
 }
 
-.containerPrincipal .topo #headerBoxUsuario.active #ajustes{
-    visibility: visible;
+.containerPrincipal #lateralDireita.active{
+    width: 335px;
     opacity: 1;
 }
 
-/* ESTILO BOX AJUSTES */
-.containerPrincipal #headerBoxUsuario #ajustes #bandeiras{
-    text-align: right;
-    margin-right: 35px;
 
-}
-
-.containerPrincipal #headerBoxUsuario #ajustes #bandeiras a{
-    cursor: pointer;
-}
-
-.containerPrincipal #headerBoxUsuario #ajustes #bandeiras img{
-    width: 30px;
-    
-}
-
-/* Ajustes Box1 Box2 Box3*/
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box1, #ajustes-box2, #ajustes-box3, #ajustes-box4{
-    border-top: solid 2px rgba(255, 255, 255, .20);
-    padding: 15px 0;
-}
-
-/* Ajustes Box1 */
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box1 #box1{
+/* ESTILO BOX1 */
+#lateralDireita #box1-titulo{
+    padding: 20px;
     display: flex;
-    padding: 0 35px;
     justify-content: space-between;
-    
-}
-
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box1 #box1 > div{
-    display: flex;
-    
-}
-
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box1 #box1 > div i{
-    margin-right: 10px;
-}
-
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box1 #status{
-    width: 15px;
-    height: 15px;
-    border-radius: 50px;
-    background: #26b829;
-}
-
-/* Ajustes Box2 */
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box2 #item1, #item2, #item3{
-    display: flex;
-    padding: 0 35px;
-    justify-content: space-between;
-    
-}
-
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box2 #item1, #item2{
-    padding-bottom: 15px;
-}
-
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box2 #dados{
-    color: white;
-}
-
-/* Ajustes Box3 */
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box3{
-    display: block;
-    padding: 15px 35px;
-}
-
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box3 > button{
     width: 100%;
-    height: 58px;
+    height: 70px;
+
+}
+
+/* ESTILO BOX1 - TITÚLO */
+#lateralDireita #box1-titulo #titulo{
+    color: #0052f3;
+}
+
+
+/* ESTILO BOX1 - BOTÃO FECHAR */
+#lateralDireita #box1-titulo #btnFecharDireita{
     background: none;
     border: none;
-    background-color: white;
-    border-radius: 5px;
+    color: #0052f3;
+    font-size: 25px;
     cursor: pointer;
-    color: #1b64f2;
-    font-size: 16px;
-    
 }
 
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box3 > button:hover{
-    background-color: rgba(255, 255, 255, .30);
-    border: solid 2px white;
-    color: white;
+#lateralDireita #box1-titulo #btnFecharDireita:hover{
+    color: #636363;
 }
 
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box3 #btnCadastrarAtivos{
-    margin-bottom: 25px;
+#lateralDireita #box1-titulo #btnFecharDireita[aria-label]::after{
+    position: absolute;
+    top: -2px;
+    right: 25px;
+    width: max-content;
 }
 
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box3 > button i{
-    font-size: 19px;
-}
+#lateralDireita #box2-menu{
+    /* height: 100px; */
+    width: 100%;
+    border-bottom: solid 2px #dedede;
 
-/* Ajustes Box4 */
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box4 ul{
+    padding: 20px;
     display: flex;
-    padding: 10px 35px;
     justify-content: space-between;
 }
 
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box4 ul li a{
-    color: white;
-    font-size: 25px;
+#lateralDireita #box2-menu > button{
+    background: none;
+    border: none;
+    color: #636363;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
 }
 
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box4 ul li a #qtdAlerta{
-    margin: 2px 5px;
-    width: 13px;
-    height: 13px;
-    background: red;
-    color: white;
-    text-align: center;
-    line-height: 18px;
-    border-radius: 50px;
-    position: absolute;
-    top: 0;
-    left: 8px;
+#lateralDireita #box2-menu > button:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
+    color: #0052f3;
 }
 
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box4 ul li a:hover{
-    color: rgba(255, 255, 255, .30);
-}
-
-.containerPrincipal #headerBoxUsuario #ajustes #ajustes-box4 a[aria-label]::after{
-    top: -35px;
-    right: -20px;
-
+#lateralDireita #box2-menu #btnDetalhes.active, #lateralDireita #box2-menu #btnProblema.active, #lateralDireita #box2-menu #btnAletas.active, #lateralDireita #box2-menu #btnHistorico.active{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
+    color: #0052f3;
 }

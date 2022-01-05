@@ -1,0 +1,39 @@
+.containerPrincipal #lateralDireita #boxDetalhes{
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    overflow: auto;
+}
+
+.containerPrincipal #lateralDireita.active #boxDetalhes.active{
+    width: 100%;
+    opacity: 1;
+    z-index: 999;
+}
+
+/* Estilo Box1 */
+#boxDetalhes .box1{
+    border-top: solid 1px #dedede;
+    padding: 20px;
+    color: #7e7d7e;
+    font-size: 14px;
+}
+
+/* Estilo Box1 */
+
+#boxDetalhes .box2{
+    border-top: solid 1px #dedede;
+    padding: 20px;
+    color: #7e7d7e;
+    font-size: 14px;
+}
+
+#boxDetalhes .box2 .linha-impar{
+    background-color: #e8e8e8;
+    padding: 5px 0;
+}
+
+#boxDetalhes .box2 .linha-par{
+    
+    padding: 5px 0;
+}

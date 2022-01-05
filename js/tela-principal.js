@@ -30,6 +30,8 @@ function menuBoxCamadas(){
     boxCamadas.classList.toggle('active');
     btnCamadas.classList.toggle('active');
 
+    fundoClick.classList.add('active');
+
 }
 
 
@@ -38,6 +40,8 @@ function menuBoxImagens(){
     lateralEsquerda.classList.toggle('active');
     boxImagens.classList.toggle('active');
     btnImagens.classList.toggle('active');
+
+    fundoClick.classList.add('active');
 }
 
 
@@ -47,6 +51,8 @@ function menuBoxComparar(){
     lateralEsquerda.classList.toggle('active');
     boxComparar.classList.toggle('active');
     btnComparar.classList.toggle('active');
+
+    fundoClick.classList.add('active');
 }
 
 
@@ -69,6 +75,8 @@ function menuBoxComparar(){
      btnCamadas.classList.remove('active');
      btnImagens.classList.remove('active');
      btnComparar.classList.remove('active');
+
+     fundoClick.classList.remove('active');
      
  }
 
@@ -125,6 +133,72 @@ function subMenuImagensFavoritos(){
     btnFavoritos.classList.add('active');
     btnFiltros.classList.remove('active');
 }
+
+
+/** =========================================================================
+ ** AÇÕES DO MENU DIREITO
+ ** ========================================================================*/
+const fundoClick = document.querySelector('#click');
+const lateralDireita = document.querySelector('#lateralDireita');
+
+fundoClick.addEventListener('click', menuBoxDireito);
+
+function menuBoxDireito(){
+    lateralDireita.classList.toggle('active');
+}
+
+const btnDetalhes = document.querySelector('#btnDetalhes');
+const btnProblema = document.querySelector('#btnProblema');
+const btnAlertas = document.querySelector('#btnAlertas');
+const btnHistorico = document.querySelector('#btnHistorico');
+
+const boxDetalhes = document.querySelector('#boxDetalhes');
+
+btnDetalhes.addEventListener('click', function(){
+    btnDetalhes.classList.add('active');
+    boxDetalhes.classList.add('active');
+
+    btnProblema.classList.remove('active');
+    btnAlertas.classList.remove('active');
+    btnHistorico.classList.remove('active');
+});
+
+// btnProblema.addEventListener('click', function(){
+//     btnProblema.classList.add('active');
+
+//     btnDetalhes.classList.remove('active');
+//     btnAlertas.classList.remove('active');
+//     btnHistorico.classList.remove('active');
+// });
+
+// btnAlertas.addEventListener('click', function(){
+//     btnAlertas.classList.add('active');
+
+//     btnDetalhes.classList.remove('active');
+//     btnProblema.classList.remove('active');
+//     btnHistorico.classList.remove('active');
+// });
+
+// btnHistorico.addEventListener('click', function(){
+//     btnHistorico.classList.add('active');
+
+//     btnDetalhes.classList.remove('active');
+//     btnProblema.classList.remove('active');
+//     btnAlertas.classList.remove('active');
+// });
+
+/** =========================================================================
+ ** AÇÕES DO MENU ESQUERDO - BOTÃO FECHAR BOX
+ ** ========================================================================*/
+ const btnFecharDireita = document.querySelector('#btnFecharDireita');
+
+ btnFecharDireita.addEventListener('click', function(){
+    lateralDireita.classList.remove('active');
+
+    boxDetalhes.classList.remove('active');
+
+});
+ 
 
 /** =========================================================================
  ** CAPTURA DA POSIÇÃO DO MOUSE NA TELA

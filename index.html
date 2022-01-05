@@ -8,11 +8,16 @@
     <!-- Importação do Estilo -->
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/estilo-tela-principal.css">
-    <link rel="stylesheet" href="css/estilo-principal-menu-direito.css">
+    <link rel="stylesheet" href="css/estilo-principal-menu-direito-topo.css">
+
     <link rel="stylesheet" href="css/estilo-principal-menu-esquerdo.css">
     <link rel="stylesheet" href="css/estilo-box-esquerdo-menu-camadas.css">
     <link rel="stylesheet" href="css/estilo-box-esquerdo-menu-imagens.css">
     <link rel="stylesheet" href="css/estilo-box-esquerdo-menu-comparar.css">
+
+    <link rel="stylesheet" href="css/estilo-principal-menu-direito.css">
+    <link rel="stylesheet" href="css/estilo-box-direito-menu-detalhes.css">
+
     <link rel="stylesheet" href="css/estilo-principal-footer.css">
 
     <!-- Importação JS -->
@@ -149,6 +154,11 @@
         </section>
 
         <main class="corpo">
+
+            <!-- AÇÃO TEMPORÁRIA APENAS PARA MOSTRAR O BOX DIREITO -->
+            <div id="click">
+
+            </div>
 
             <!-- Lateral Esquerda -->
             <section id="lateralEsquerda">
@@ -541,6 +551,78 @@
                     </section>
 
                 </section>
+            </section>
+
+            <!-- Lateral Direita -->
+            <section id="lateralDireita">
+
+                <div id="box1-titulo">
+                    <h2 id="titulo">Detalhes</h2>
+                    <button id="btnFecharDireita" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                </div>
+
+                <div id="box2-menu">
+                    <button class="active" id="btnDetalhes"><i class="fas fa-info-circle"></i></button>
+                    <button id="btnProblemas"><i class="fas fa-exclamation-triangle"></i></button>
+                    <button id="btnAlertas"><i class="far fa-bell"></i></button>
+                    <button id="btnHistorico"><i class="fas fa-history"></i></button>
+                </div>
+
+                <!-- BOX DETALHES -->
+                <section class="active" id="boxDetalhes">
+                    <div class="box1">
+                        <p>Aço Minas Ouro Branco - Gerdal 63</p>
+                        <p>Área de Monitoramento</p>
+                    </div>
+
+                    <div class="box2">
+                        <div class="linha-impar">
+                            <p id="texto">Área</p>
+                            <p id="valor">56 hectares</p>
+                        </div>
+
+                        <div class="linha-par">
+                            <p id="texto">Perímetro</p>
+                            <p id="valor">3,1km</p>
+                        </div>
+
+                        <div class="linha-impar">
+                            <p id="texto">Estágio da Obra</p>
+                            <p id="valor">Andamento</p>
+                        </div>
+
+                        <div class="linha-par">
+                            <p id="texto">Grupo</p>
+                            <p id="valor">BR-DU</p>
+                        </div>
+
+                        <div class="linha-impar">
+                            <p id="texto">Quantidade de Lotes</p>
+                            <p id="valor">1089</p>
+                        </div>
+                    </div>
+
+                    <div class="box3">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Rua Mário Pio Pereira, São Conrado, Campo Grande - MS</p>
+                    </div>
+                </section>
+
+                <!-- BOX PROBLEMAS -->
+                <!-- <section id="boxProblema">
+                    BOX PROBLEMAS
+                </section> -->
+
+                <!-- BOX ALERTAS -->
+                <!-- <section id="boxAlertas">
+                    BOX ALERTAS
+                </section> -->
+
+                <!-- BOX HISTORICOS -->
+                <!-- <section id="boxHistorico">
+                    BOX HISTORICOS
+                </section> -->
+
             </section>
 
             <!-- BOTÕES RODAPÉ ESQUERDO -->
