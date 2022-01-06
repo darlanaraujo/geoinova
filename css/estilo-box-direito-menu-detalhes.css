@@ -2,38 +2,64 @@
     position: absolute;
     width: 0;
     opacity: 0;
+    /* display: none; */
     overflow: auto;
+    transition: .5s;
 }
 
 .containerPrincipal #lateralDireita.active #boxDetalhes.active{
     width: 100%;
     opacity: 1;
-    z-index: 999;
+    z-index: 1000;
+    /* display: block; */
 }
 
 /* Estilo Box1 */
 #boxDetalhes .box1{
-    border-top: solid 1px #dedede;
+    border-bottom: solid 1px #dedede;
     padding: 20px;
     color: #7e7d7e;
     font-size: 14px;
 }
 
-/* Estilo Box1 */
-
+/* Estilo Box2 */
 #boxDetalhes .box2{
-    border-top: solid 1px #dedede;
-    padding: 20px;
+    border-bottom: solid 1px #dedede;
+    padding: 20px 0;
     color: #7e7d7e;
     font-size: 14px;
 }
 
 #boxDetalhes .box2 .linha-impar{
+    display: flex;
+    justify-content: space-between;
     background-color: #e8e8e8;
-    padding: 5px 0;
+    padding: 5px 20px;
 }
 
 #boxDetalhes .box2 .linha-par{
-    
-    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+#boxDetalhes .box2 #valor{
+    color: #0052f3;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* Estilo Box3 */
+#boxDetalhes .box3{
+    border-bottom: solid 1px #dedede;
+    padding-top: 20px;
+    padding: 20px;
+    color: #0052f3;
+    font-size: 16px;
+}
+
+#boxDetalhes .box3 i{
+    font-size: 20px;
+    margin-bottom: 8px;
 }

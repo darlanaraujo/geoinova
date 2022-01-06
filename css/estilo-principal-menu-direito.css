@@ -2,7 +2,29 @@
  ** AÇÕES DO MENU ESQUERDO
  ** ========================================================================*/
 
-.containerPrincipal #lateralDireita{
+@keyframes fadeDireita {
+    from{
+        width: 0;
+        opacity: 0;
+    }
+    to{
+        width: 335px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeVoltarDireita {
+    from{
+        width: 335px;
+        opacity: 1;
+    }
+    to{
+        width: 0 all; /* Tive que colocar all para não estourar a tela */
+        opacity: 0;
+    }
+}
+
+.containerPrincipal .corpo #lateralDireita{
     background-color: #eeeeee;
     border-radius: 10px 0 0 10px;
     transition: .5s;
@@ -11,20 +33,19 @@
     top: 150px;
     right: 0;
 
-    width: 0;
-    opacity: 0;
+    animation: fadeVoltarDireita 1s forwards;
     height: calc(100vh - 250px);
 
 }
 
-.containerPrincipal #lateralDireita.active{
-    width: 335px;
-    opacity: 1;
+.containerPrincipal .corpo #lateralDireita.active{
+    animation: fadeDireita 1s forwards;
+
 }
 
 
 /* ESTILO BOX1 */
-#lateralDireita #box1-titulo{
+.corpo #lateralDireita #box1-titulo{
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -34,13 +55,13 @@
 }
 
 /* ESTILO BOX1 - TITÚLO */
-#lateralDireita #box1-titulo #titulo{
+.corpo #lateralDireita #box1-titulo #titulo{
     color: #0052f3;
 }
 
 
 /* ESTILO BOX1 - BOTÃO FECHAR */
-#lateralDireita #box1-titulo #btnFecharDireita{
+.corpo #lateralDireita #box1-titulo #btnFecharDireita{
     background: none;
     border: none;
     color: #0052f3;
@@ -48,18 +69,18 @@
     cursor: pointer;
 }
 
-#lateralDireita #box1-titulo #btnFecharDireita:hover{
+.corpo #lateralDireita #box1-titulo #btnFecharDireita:hover{
     color: #636363;
 }
 
-#lateralDireita #box1-titulo #btnFecharDireita[aria-label]::after{
+.corpo #lateralDireita #box1-titulo #btnFecharDireita[aria-label]::after{
     position: absolute;
     top: -2px;
     right: 25px;
     width: max-content;
 }
 
-#lateralDireita #box2-menu{
+.corpo #lateralDireita #box2-menu{
     /* height: 100px; */
     width: 100%;
     border-bottom: solid 2px #dedede;
@@ -69,7 +90,7 @@
     justify-content: space-between;
 }
 
-#lateralDireita #box2-menu > button{
+.corpo #lateralDireita #box2-menu > button{
     background: none;
     border: none;
     color: #636363;
@@ -81,12 +102,12 @@
     transition: .5s;
 }
 
-#lateralDireita #box2-menu > button:hover{
+.corpo #lateralDireita #box2-menu > button:hover{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
     color: #0052f3;
 }
 
-#lateralDireita #box2-menu #btnDetalhes.active, #lateralDireita #box2-menu #btnProblema.active, #lateralDireita #box2-menu #btnAletas.active, #lateralDireita #box2-menu #btnHistorico.active{
+.corpo #lateralDireita #box2-menu #btnDetalhes.active, #lateralDireita #box2-menu #btnProblema.active, #lateralDireita #box2-menu #btnAletas.active, #lateralDireita #box2-menu #btnHistorico.active{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
     color: #0052f3;
 }

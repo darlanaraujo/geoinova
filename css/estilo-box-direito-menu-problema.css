@@ -1,0 +1,15 @@
+.containerPrincipal #lateralDireita #boxProblema{
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    /* display: none; */
+    overflow: auto;
+    transition: .5s;
+}
+
+.containerPrincipal #lateralDireita.active #boxProblema.active{
+    width: 100%;
+    opacity: 1;
+    z-index: 1000;
+    /* display: block; */
+}

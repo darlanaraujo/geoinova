@@ -153,6 +153,9 @@ const btnAlertas = document.querySelector('#btnAlertas');
 const btnHistorico = document.querySelector('#btnHistorico');
 
 const boxDetalhes = document.querySelector('#boxDetalhes');
+const boxProblema = document.querySelector('#boxProblema');
+const boxAlertas = document.querySelector('#boxAlertas');
+const boxHistorico = document.querySelector('#boxHistorico');
 
 btnDetalhes.addEventListener('click', function(){
     btnDetalhes.classList.add('active');
@@ -161,31 +164,52 @@ btnDetalhes.addEventListener('click', function(){
     btnProblema.classList.remove('active');
     btnAlertas.classList.remove('active');
     btnHistorico.classList.remove('active');
+
+    boxProblema.classList.remove('active');
+    boxAlertas.classList.remove('active');
+    boxHistorico.classList.remove('active');
 });
 
-// btnProblema.addEventListener('click', function(){
-//     btnProblema.classList.add('active');
 
-//     btnDetalhes.classList.remove('active');
-//     btnAlertas.classList.remove('active');
-//     btnHistorico.classList.remove('active');
-// });
+btnProblema.addEventListener('click', function(){
+    btnProblema.classList.add('active');
+    boxProblema.classList.add('active');
 
-// btnAlertas.addEventListener('click', function(){
-//     btnAlertas.classList.add('active');
+    btnDetalhes.classList.remove('active');
+    btnAlertas.classList.remove('active');
+    btnHistorico.classList.remove('active');
 
-//     btnDetalhes.classList.remove('active');
-//     btnProblema.classList.remove('active');
-//     btnHistorico.classList.remove('active');
-// });
+    boxDetalhes.classList.remove('active');
+    boxAlertas.classList.remove('active');
+    boxHistorico.classList.remove('active');
 
-// btnHistorico.addEventListener('click', function(){
-//     btnHistorico.classList.add('active');
+});
 
-//     btnDetalhes.classList.remove('active');
-//     btnProblema.classList.remove('active');
-//     btnAlertas.classList.remove('active');
-// });
+btnAlertas.addEventListener('click', function(){
+    btnAlertas.classList.add('active');
+    boxAlertas.classList.add('active');
+
+    btnDetalhes.classList.remove('active');
+    btnProblema.classList.remove('active');
+    btnHistorico.classList.remove('active');
+
+    boxDetalhes.classList.remove('active');
+    boxProblema.classList.remove('active');
+    boxHistorico.classList.remove('active');
+});
+
+btnHistorico.addEventListener('click', function(){
+    btnHistorico.classList.add('active');
+    boxHistorico.classList.add('active');
+
+    btnDetalhes.classList.remove('active');
+    btnProblema.classList.remove('active');
+    btnAlertas.classList.remove('active');
+
+    boxDetalhes.classList.remove('active');
+    boxProblema.classList.remove('active');
+    boxAlertas.classList.remove('active');
+});
 
 /** =========================================================================
  ** AÇÕES DO MENU ESQUERDO - BOTÃO FECHAR BOX

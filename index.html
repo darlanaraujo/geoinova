@@ -17,6 +17,9 @@
 
     <link rel="stylesheet" href="css/estilo-principal-menu-direito.css">
     <link rel="stylesheet" href="css/estilo-box-direito-menu-detalhes.css">
+    <link rel="stylesheet" href="css/estilo-box-direito-menu-problema.css">
+    <link rel="stylesheet" href="css/estilo-box-direito-menu-alertas.css">
+    <link rel="stylesheet" href="css/estilo-box-direito-menu-historico.css">
 
     <link rel="stylesheet" href="css/estilo-principal-footer.css">
 
@@ -556,17 +559,21 @@
             <!-- Lateral Direita -->
             <section id="lateralDireita">
 
-                <div id="box1-titulo">
-                    <h2 id="titulo">Detalhes</h2>
-                    <button id="btnFecharDireita" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                <div id="topo-lateral-direita">
+                    <div id="box1-titulo">
+                        <h2 id="titulo">Detalhes</h2>
+                        <button id="btnFecharDireita" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                    </div>
+
+                    <div id="box2-menu">
+                        <button class="active" id="btnDetalhes"><i class="fas fa-info-circle"></i></button>
+                        <button id="btnProblema"><i class="fas fa-exclamation-triangle"></i></button>
+                        <button id="btnAlertas"><i class="far fa-bell"></i></button>
+                        <button id="btnHistorico"><i class="fas fa-history"></i></button>
+                    </div>
                 </div>
 
-                <div id="box2-menu">
-                    <button class="active" id="btnDetalhes"><i class="fas fa-info-circle"></i></button>
-                    <button id="btnProblemas"><i class="fas fa-exclamation-triangle"></i></button>
-                    <button id="btnAlertas"><i class="far fa-bell"></i></button>
-                    <button id="btnHistorico"><i class="fas fa-history"></i></button>
-                </div>
+                
 
                 <!-- BOX DETALHES -->
                 <section class="active" id="boxDetalhes">
@@ -604,24 +611,25 @@
 
                     <div class="box3">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>Rua Mário Pio Pereira, São Conrado, Campo Grande - MS</p>
+                        <p>Rua Mário Pio Pereira,</p>
+                        <p>São Conrado, Campo Grande - MS</p>
                     </div>
                 </section>
 
                 <!-- BOX PROBLEMAS -->
-                <!-- <section id="boxProblema">
+                <section id="boxProblema">
                     BOX PROBLEMAS
-                </section> -->
+                </section>
 
                 <!-- BOX ALERTAS -->
-                <!-- <section id="boxAlertas">
+                <section id="boxAlertas">
                     BOX ALERTAS
-                </section> -->
+                </section>
 
                 <!-- BOX HISTORICOS -->
-                <!-- <section id="boxHistorico">
+                <section id="boxHistorico">
                     BOX HISTORICOS
-                </section> -->
+                </section>
 
             </section>
 
