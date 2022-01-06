@@ -145,6 +145,22 @@ fundoClick.addEventListener('click', menuBoxDireito);
 
 function menuBoxDireito(){
     lateralDireita.classList.toggle('active');
+
+    startBoxDireito();
+
+}
+
+function startBoxDireito(){
+    btnDetalhes.classList.add('active');
+    boxDetalhes.classList.add('active');
+
+    btnProblema.classList.remove('active');
+    btnAlertas.classList.remove('active');
+    btnHistorico.classList.remove('active');
+
+    boxProblema.classList.remove('active');
+    boxAlertas.classList.remove('active');
+    boxHistorico.classList.remove('active');
 }
 
 const btnDetalhes = document.querySelector('#btnDetalhes');
@@ -219,7 +235,7 @@ btnHistorico.addEventListener('click', function(){
  btnFecharDireita.addEventListener('click', function(){
     lateralDireita.classList.remove('active');
 
-    boxDetalhes.classList.remove('active');
+    startBoxDireito();
 
 });
  

@@ -11,5 +11,57 @@
     width: 100%;
     opacity: 1;
     z-index: 1000;
-    /* display: block; */
+    height: calc(100% - 200px);
+    overflow: auto;
+}
+
+/* Estilo Box1 */
+#lateralDireita #boxProblema .box1{
+    display: flex;
+    justify-content: space-between;
+    background-color: #dedede;
+    color: #7e7d7e;
+    font-size: 14px;
+    padding: 5px 35px;
+}
+
+#lateralDireita #boxProblema .box1 #valor{
+    color: #0052f3;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#lateralDireita #boxProblema .box2{
+    padding: 10px 35px;
+    color: #7e7d7e;
+    font-size: 14px;
+}
+
+#lateralDireita #boxProblema .box2 #titulo{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#lateralDireita #boxProblema .box2 #img{
+    margin-top: 30px;
+}
+
+#lateralDireita #boxProblema .box3{
+    padding: 15px 35px;
+}
+
+#lateralDireita #boxProblema .box3 > button{
+    display: flex;
+    gap: 5px;
+    background: none;
+    border: none;
+    color: #0052f3;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#lateralDireita #boxProblema .box3 > button:hover{
+    color: #636363;
+
 }

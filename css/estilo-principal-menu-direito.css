@@ -19,7 +19,7 @@
         opacity: 1;
     }
     to{
-        width: 0 all; /* Tive que colocar all para não estourar a tela */
+        width: 0; /* Tive que colocar all para não estourar a tela */
         opacity: 0;
     }
 }
@@ -43,6 +43,14 @@
 
 }
 
+/* Esse Estilo que permite ocultar o conteúdo do box direito sem perder o efeito por ter usado display none */
+.containerPrincipal .corpo #lateralDireita .conteudo-direito{
+    display: none;
+}
+
+.containerPrincipal .corpo #lateralDireita.active .conteudo-direito{
+    display: block;
+}
 
 /* ESTILO BOX1 */
 .corpo #lateralDireita #box1-titulo{
@@ -107,7 +115,7 @@
     color: #0052f3;
 }
 
-.corpo #lateralDireita #box2-menu #btnDetalhes.active, #lateralDireita #box2-menu #btnProblema.active, #lateralDireita #box2-menu #btnAletas.active, #lateralDireita #box2-menu #btnHistorico.active{
+.corpo #lateralDireita #box2-menu #btnDetalhes.active, #lateralDireita #box2-menu #btnProblema.active, #lateralDireita #box2-menu #btnAlertas.active, #lateralDireita #box2-menu #btnHistorico.active{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
     color: #0052f3;
 }

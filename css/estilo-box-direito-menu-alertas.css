@@ -2,7 +2,6 @@
     position: absolute;
     width: 0;
     opacity: 0;
-    /* display: none; */
     overflow: auto;
     transition: .5s;
 }
@@ -11,5 +10,36 @@
     width: 100%;
     opacity: 1;
     z-index: 1000;
-    /* display: block; */
+    height: calc(100% - 200px);
+    overflow: auto;
+}
+
+/* Estilo Box 1 */
+#lateralDireita #boxAlertas .box1{
+    background-color: #dedede;
+    color: #7e7d7e;
+    font-size: 14px;
+    padding: 10px 35px;
+}
+
+#lateralDireita #boxAlertas .box1 #valor{
+    color: #0052f3;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#lateralDireita #boxAlertas .box2{
+    padding: 15px 35px;
+    color: #7e7d7e;
+    font-size: 14px;
+}
+
+#lateralDireita #boxAlertas .box2 > label{
+    display: inline-block;
+}
+
+#lateralDireita #boxAlertas .box2 > select{
+    display: block;
+    width: 100%;
 }

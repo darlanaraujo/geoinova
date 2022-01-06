@@ -2,7 +2,6 @@
     position: absolute;
     width: 0;
     opacity: 0;
-    /* display: none; */
     overflow: auto;
     transition: .5s;
 }
@@ -11,13 +10,14 @@
     width: 100%;
     opacity: 1;
     z-index: 1000;
-    /* display: block; */
+    height: calc(100% - 200px);
+    overflow: auto;
 }
 
 /* Estilo Box1 */
 #boxDetalhes .box1{
     border-bottom: solid 1px #dedede;
-    padding: 20px;
+    padding: 20px 35px;
     color: #7e7d7e;
     font-size: 14px;
 }
@@ -34,13 +34,13 @@
     display: flex;
     justify-content: space-between;
     background-color: #e8e8e8;
-    padding: 5px 20px;
+    padding: 5px 35px;
 }
 
 #boxDetalhes .box2 .linha-par{
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 5px 35px;
 }
 
 #boxDetalhes .box2 #valor{
@@ -54,9 +54,9 @@
 #boxDetalhes .box3{
     border-bottom: solid 1px #dedede;
     padding-top: 20px;
-    padding: 20px;
+    padding: 20px 35px;
     color: #0052f3;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 #boxDetalhes .box3 i{

@@ -276,7 +276,37 @@ body{
     height: 22px;
     border-radius: 3px;
     cursor: pointer;
+    position: relative;
+}
 
+.container-login-formulario .manter-login input:checked::before{
+    content: '';
+    display: block;
+    width: 8px;
+    height: 3px;
+    position: absolute;
+    background: white;
+    top: 4px;
+    left: -7px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg);
+}
+
+.container-login-formulario .manter-login input:checked::after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 5px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(135deg);
 }
 
 .container-login-formulario .manter-login input:checked{

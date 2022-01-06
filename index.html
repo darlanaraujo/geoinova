@@ -559,77 +559,134 @@
             <!-- Lateral Direita -->
             <section id="lateralDireita">
 
-                <div id="topo-lateral-direita">
-                    <div id="box1-titulo">
-                        <h2 id="titulo">Detalhes</h2>
-                        <button id="btnFecharDireita" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                <div class="conteudo-direito">
+
+                    <div id="topo-lateral-direita">
+                        <div id="box1-titulo">
+                            <h2 id="titulo">Detalhes</h2>
+                            <button id="btnFecharDireita" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                        </div>
+
+                        <div id="box2-menu">
+                            <button id="btnDetalhes"><i class="fas fa-info-circle"></i></button>
+                            <button id="btnProblema"><i class="fas fa-exclamation-triangle"></i></button>
+                            <button id="btnAlertas"><i class="far fa-bell"></i></button>
+                            <button id="btnHistorico"><i class="fas fa-history"></i></button>
+                        </div>
                     </div>
 
-                    <div id="box2-menu">
-                        <button class="active" id="btnDetalhes"><i class="fas fa-info-circle"></i></button>
-                        <button id="btnProblema"><i class="fas fa-exclamation-triangle"></i></button>
-                        <button id="btnAlertas"><i class="far fa-bell"></i></button>
-                        <button id="btnHistorico"><i class="fas fa-history"></i></button>
-                    </div>
+                    
+
+                    <!-- BOX DETALHES -->
+                    <section id="boxDetalhes">
+                        <div class="box1">
+                            <p>Aço Minas Ouro Branco - Gerdal 63</p>
+                            <p>Área de Monitoramento</p>
+                        </div>
+
+                        <div class="box2">
+                            <div class="linha-impar">
+                                <p id="texto">Área</p>
+                                <p id="valor">56 hectares</p>
+                            </div>
+
+                            <div class="linha-par">
+                                <p id="texto">Perímetro</p>
+                                <p id="valor">3,1km</p>
+                            </div>
+
+                            <div class="linha-impar">
+                                <p id="texto">Estágio da Obra</p>
+                                <p id="valor">Andamento</p>
+                            </div>
+
+                            <div class="linha-par">
+                                <p id="texto">Grupo</p>
+                                <p id="valor">BR-DU</p>
+                            </div>
+
+                            <div class="linha-impar">
+                                <p id="texto">Quantidade de Lotes</p>
+                                <p id="valor">1089</p>
+                            </div>
+                        </div>
+
+                        <div class="box3">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Rua Mário Pio Pereira,</p>
+                            <p>São Conrado, Campo Grande - MS</p>
+                        </div>
+                    </section>
+
+                    <!-- BOX PROBLEMAS -->
+                    <section id="boxProblema">
+
+                        <div class="box1">
+                            <p id="texto">Local</p>
+                            <p id="valor">171</p>
+                        </div>
+
+                        <div class="box2">
+                            <p id="titulo">Atividade Mineradora</p>
+                            <p id="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur beatae corrupti labore animi odio officia quidem aspernatur.</p>
+
+                            <figure id="img">
+                                <img src="img/img-comparacao.png" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="box3">
+                            <button id="btnVerMapa">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <p>Ver no mapa</p>
+                            </button>
+                            
+                        </div>
+
+                    </section>
+
+                    <!-- BOX ALERTAS -->
+                    <section id="boxAlertas">
+                        
+                        <div class="box1">
+
+                            <div class="linha1">
+                                <p id="texto">Usuário</p>
+                                <p id="valor">Geoinova - Inovamaps</p>
+                            </div>
+                            
+                            <div class="linha2">
+                                <p id="texto">Nome do alerta</p>
+                                <p id="valor">Alerta 79 - Rosariana</p>
+                            </div>
+
+                            <div class="linha3">
+                                <p id="texto">Categoria</p>
+                                <p id="valor">51 Dano ao meio ambiente</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="box2">
+
+                            <div class="boxopt"></div>
+                            <p>Status</p>
+                            <select name="optStatus" id="optStatus">
+                                <option value="Pendente">Pendente</option>
+                                <option value="Opção 2">Opção 2</option>
+                                <option value="Opção 3">Opção 3</option>
+                            </select>
+                            
+                        </div>
+                        
+                    </section>
+
+                    <!-- BOX HISTORICOS -->
+                    <section id="boxHistorico">
+                        BOX HISTORICOS
+                    </section>
+
                 </div>
-
-                
-
-                <!-- BOX DETALHES -->
-                <section class="active" id="boxDetalhes">
-                    <div class="box1">
-                        <p>Aço Minas Ouro Branco - Gerdal 63</p>
-                        <p>Área de Monitoramento</p>
-                    </div>
-
-                    <div class="box2">
-                        <div class="linha-impar">
-                            <p id="texto">Área</p>
-                            <p id="valor">56 hectares</p>
-                        </div>
-
-                        <div class="linha-par">
-                            <p id="texto">Perímetro</p>
-                            <p id="valor">3,1km</p>
-                        </div>
-
-                        <div class="linha-impar">
-                            <p id="texto">Estágio da Obra</p>
-                            <p id="valor">Andamento</p>
-                        </div>
-
-                        <div class="linha-par">
-                            <p id="texto">Grupo</p>
-                            <p id="valor">BR-DU</p>
-                        </div>
-
-                        <div class="linha-impar">
-                            <p id="texto">Quantidade de Lotes</p>
-                            <p id="valor">1089</p>
-                        </div>
-                    </div>
-
-                    <div class="box3">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Rua Mário Pio Pereira,</p>
-                        <p>São Conrado, Campo Grande - MS</p>
-                    </div>
-                </section>
-
-                <!-- BOX PROBLEMAS -->
-                <section id="boxProblema">
-                    BOX PROBLEMAS
-                </section>
-
-                <!-- BOX ALERTAS -->
-                <section id="boxAlertas">
-                    BOX ALERTAS
-                </section>
-
-                <!-- BOX HISTORICOS -->
-                <section id="boxHistorico">
-                    BOX HISTORICOS
-                </section>
 
             </section>
 
