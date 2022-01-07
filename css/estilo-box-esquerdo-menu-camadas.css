@@ -1,6 +1,9 @@
 /** =========================================================================
  ** MENU ESQUERDO - CAMADAS
  ** ========================================================================*/
+
+
+
  .containerPrincipal #lateralEsquerda #boxEsquerdo #boxCamadas{
     opacity: 0;
     animation: fadeBoxVoltar .5s forwards;
@@ -19,6 +22,15 @@
     animation: fadeBox .5s .5s forwards;
     z-index: 1000;
  }
+
+  /* Esse Estilo que permite ocultar o conteúdo do box ESQUERDO sem perder o efeito por ter usado display none */
+.containerPrincipal #lateralEsquerda #boxEsquerdo #boxCamadas .conteudo{
+    display: none;
+}
+
+.containerPrincipal #lateralEsquerda.active #boxEsquerdo #boxCamadas.active .conteudo{
+    display: block;
+}
 
  
 /* ESTILO BOX1 */

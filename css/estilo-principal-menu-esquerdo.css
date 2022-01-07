@@ -33,52 +33,7 @@
     transition: .5s;
  }
 
- /* ESTILO PARA MOSTRAR UM BOX QUE FICA POR BAIXO DOS BOX MENU */
- /* @keyframes fadeBox {
-    from{
-        width: 0;
-        opacity: -10;
-    }
-    to{
-        width: 300px;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeBoxVoltar {
-    from{
-        width: 350px;
-        opacity: 1;
-    }
-    to{
-        transition: .5s;
-        width: 0;
-        opacity: 0;
-    }
-}
-
- .containerPrincipal #lateralEsquerda #boxEsquerdo{
-    opacity: 0;
-    z-index: 999 !important;
-    animation: fadeBoxVoltar .5s forwards;
-    position: absolute;
-    top: 0px;
-    left: 73px;
-    z-index: 1099;
-    background-color: #eeeeee;
-    border-radius: 0 10px 10px 0;
-    border-left: solid 2px #dedede;
-    width: 0;
-    height: calc(100vh - 250px);
-    transition: .5s;
- }
-
- .containerPrincipal #lateralEsquerda.active #boxEsquerdo{
-    animation: fadeBox .5s .5s forwards;
- } */
-
  /* ESTILO MENU ESQUERDO */
-
 .containerPrincipal #lateralEsquerda #menuEsquerdo{
     text-align: center;
     margin: 33px 0;
@@ -110,8 +65,6 @@
     left: 70px;
     width: max-content;
 }
-
-
 
 /** =========================================================================
  ** AÇÕES DO MENU ESQUERDO - ANIMAÇÕES BOX MENU

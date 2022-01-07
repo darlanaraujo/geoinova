@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/estilo-box-esquerdo-menu-imagens.css">
     <link rel="stylesheet" href="css/estilo-box-esquerdo-menu-comparar.css">
 
+    <link rel="stylesheet" href="css/estilo-box-meio-tela.css">
+
     <link rel="stylesheet" href="css/estilo-principal-menu-direito.css">
     <link rel="stylesheet" href="css/estilo-box-direito-menu-detalhes.css">
     <link rel="stylesheet" href="css/estilo-box-direito-menu-problema.css">
@@ -175,385 +177,543 @@
 
                     <!-- BOX CAMADAS -->
                     <section id="boxCamadas">
-                        <div id="box1">
-                            <h2 id="titulo">Camadas <a href="" id="btnInfo" aria-label="Saiba mais"><i class="fas fa-info-circle"></i></a></h2>
-                            <button id="btnFechar" aria-label="Fechar"><i class="fas fa-times"></i></button>
-                        </div>
 
-                        <div id="box2">
-                            <div class="fundoPesquisa">
-                                <form action="">
-                                    <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar camada">
-                                    <button id='btnPesquisa'><i class="fas fa-search"></i></button>
-                                </form>
+                        <div class="conteudo">
+                            <div id="box1">
+                                <h2 id="titulo">Camadas <a href="" id="btnInfo" aria-label="Saiba mais"><i class="fas fa-info-circle"></i></a></h2>
+                                <button id="btnFechar" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                            </div>
 
-                                <p id="valorResultados">74<span id="textoResultados">resultados encontrados</span></p>
+                            <div id="box2">
+                                <div class="fundoPesquisa">
+                                    <form action="">
+                                        <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar camada">
+                                        <button id='btnPesquisa'><i class="fas fa-search"></i></button>
+                                    </form>
+
+                                    <p id="valorResultados">74<span id="textoResultados">resultados encontrados</span></p>
+                                </div>
+                            </div>
+
+                            <div id="box3">
+                                <ul>
+                                    <li id="camada-lista-item1">
+                                        <label class="switch">
+                                            <div class="switch-wrapper">
+                                                <input type="checkbox" name="" id="check-item1">
+                                                <span class="switch-button"></span>  
+                                            </div>
+                                            <span class="switch-texto">Área de Monitoramento</span>
+                                        </label>
+
+                                        <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button>
+
+                                        <!-- ITEM1 - SUB MENU -->
+                                        <ul id="camada-sub-menu-item1">
+                                            <li id="camada-sub-menu-item1-1">
+                                                <label class="switch">
+                                                    <div class="switch-wrapper">
+                                                        <input type="checkbox" name="" id="check-item1">
+                                                        <span class="switch-button"></span>  
+                                                    </div>
+                                                    <span class="switch-texto">Fazenda Água Fria</span>
+                                                </label>
+                                                <button id="btnExibirSub2" aria-label="Exibir"><i class="fas fa-sort-down"></i></button>
+
+                                                <!-- ITEM1 - SUB MENU 2 -->
+                                                <ul id="camada-sub-menu2-item1-1">
+                                                    <li id="camada-sub-menu-item1-1-1">
+                                                        <label class="switch">
+                                                            <div class="switch-wrapper">
+                                                                <input type="checkbox" name="" id="check-item1">
+                                                                <span class="switch-button"></span>  
+                                                            </div>
+                                                            <span class="switch-texto">Contorno</span>
+                                                        </label>
+                                                        <!-- <button id="btnExibirSub2" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
+                                                    </li>
+
+                                                    <li id="camada-sub-menu-item1-1-2">
+                                                        <label class="switch">
+                                                            <div class="switch-wrapper">
+                                                                <input type="checkbox" name="" id="check-item1">
+                                                                <span class="switch-button"></span>  
+                                                            </div>
+                                                            <span class="switch-texto">Crista</span>
+                                                        </label>
+                                                        <!-- <button id="btnExibirSub2" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
+                                                    </li>
+
+                                                    <li id="camada-sub-menu-item1-1-3">
+                                                        <label class="switch">
+                                                            <div class="switch-wrapper">
+                                                                <input type="checkbox" name="" id="check-item1">
+                                                                <span class="switch-button"></span>  
+                                                            </div>
+                                                            <span class="switch-texto">Pé</span>
+                                                        </label>
+                                                        <!-- <button id="btnExibirSub2" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
+                                                    </li>
+                                                </ul>
+
+                                            </li>
+
+                                            <li id="camada-sub-menu-item1-2">
+                                                <label class="switch">
+                                                    <div class="switch-wrapper">
+                                                        <input type="checkbox" name="" id="check-item1">
+                                                        <span class="switch-button"></span>  
+                                                    </div>
+                                                    <span class="switch-texto">Garimpo Rio Vermelho</span>
+                                                </label>
+                                                <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
+                                            </li>
+
+                                            <li id="camada-sub-menu-item1-3">
+                                                <label class="switch">
+                                                    <div class="switch-wrapper">
+                                                        <input type="checkbox" name="" id="check-item1">
+                                                        <span class="switch-button"></span>  
+                                                    </div>
+                                                    <span class="switch-texto">Garimpo Santa Luzia</span>
+                                                </label>
+                                                <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
+                                            </li>
+
+                                            <li id="camada-sub-menu-item1-4">
+                                                <label class="switch">
+                                                    <div class="switch-wrapper">
+                                                        <input type="checkbox" name="" id="check-item1">
+                                                        <span class="switch-button"></span>  
+                                                    </div>
+                                                    <span class="switch-texto">Horto Aranha</span>
+                                                </label>
+                                                <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
+                                            </li>
+
+                                            <li id="camada-sub-menu-item1-5">
+                                                <label class="switch">
+                                                    <div class="switch-wrapper">
+                                                        <input type="checkbox" name="" id="check-item1">
+                                                        <span class="switch-button"></span>  
+                                                    </div>
+                                                    <span class="switch-texto">LT Codemin</span>
+                                                </label>
+                                                <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
+                                            </li>
+
+                                            <li id="camada-sub-menu-item1-6">
+                                                <label class="switch">
+                                                    <div class="switch-wrapper">
+                                                        <input type="checkbox" name="" id="check-item1">
+                                                        <span class="switch-button"></span>  
+                                                    </div>
+                                                    <span class="switch-texto">OCO Codemin</span>
+                                                </label>
+                                                <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
+                                            </li>
+
+                                            <li id="camada-sub-menu-item1-7">
+                                                <label class="switch">
+                                                    <div class="switch-wrapper">
+                                                        <input type="checkbox" name="" id="check-item1">
+                                                        <span class="switch-button"></span>  
+                                                    </div>
+                                                    <span class="switch-texto">Rosariana</span>
+                                                </label>
+                                                <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
+                                            </li>
+                                            
+                                        </ul>
+
+                                    </li>
+            
+                                    <li id="camada-lista-item2">
+                                        <label class="switch">
+                                            <div class="switch-wrapper">
+                                                <input type="checkbox" name="" id="check-item2">
+                                                <span class="switch-button"></span>  
+                                            </div>
+                                            <span class="switch-texto">Direito Mineral</span>
+                                        </label>
+                                        <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button>
+                                    </li>
+
+                                    <li id="camada-lista-item3">
+                                        <label class="switch">
+                                            <div class="switch-wrapper">
+                                                <input type="checkbox" name="" id="check-item3">
+                                                <span class="switch-button"></span>  
+                                            </div>
+                                            <span class="switch-texto">Limites da Propriedade</span>
+                                        </label>
+                                        <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button>
+                                    </li>
+
+                                    <li id="camada-lista-item4">
+                                        <label class="switch">
+                                            <div class="switch-wrapper">
+                                                <input type="checkbox" name="" id="check-item4">
+                                                <span class="switch-button"></span>  
+                                            </div>
+                                            <span class="switch-texto">Licenças de Mineração</span>
+                                        </label>
+                                        <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button>
+                                    </li>
+
+                                    
+                                </ul>
                             </div>
                         </div>
-
-                        <div id="box3">
-                            <ul>
-                                <li id="camada-lista-item1">
-                                    <label class="switch">
-                                        <div class="switch-wrapper">
-                                            <input type="checkbox" name="" id="check-item1">
-                                            <span class="switch-button"></span>  
-                                        </div>
-                                        <span class="switch-texto">Área de Monitoramento</span>
-                                    </label>
-
-                                    <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button>
-
-                                    <!-- ITEM1 - SUB MENU -->
-                                    <ul id="camada-sub-menu-item1">
-                                        <li id="camada-sub-menu-item1-1">
-                                            <label class="switch">
-                                                <div class="switch-wrapper">
-                                                    <input type="checkbox" name="" id="check-item1">
-                                                    <span class="switch-button"></span>  
-                                                </div>
-                                                <span class="switch-texto">Fazenda Água Fria</span>
-                                            </label>
-                                            <button id="btnExibirSub2" aria-label="Exibir"><i class="fas fa-sort-down"></i></button>
-
-                                            <!-- ITEM1 - SUB MENU 2 -->
-                                            <ul id="camada-sub-menu2-item1-1">
-                                                <li id="camada-sub-menu-item1-1-1">
-                                                    <label class="switch">
-                                                        <div class="switch-wrapper">
-                                                            <input type="checkbox" name="" id="check-item1">
-                                                            <span class="switch-button"></span>  
-                                                        </div>
-                                                        <span class="switch-texto">Contorno</span>
-                                                    </label>
-                                                    <!-- <button id="btnExibirSub2" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
-                                                </li>
-
-                                                <li id="camada-sub-menu-item1-1-2">
-                                                    <label class="switch">
-                                                        <div class="switch-wrapper">
-                                                            <input type="checkbox" name="" id="check-item1">
-                                                            <span class="switch-button"></span>  
-                                                        </div>
-                                                        <span class="switch-texto">Crista</span>
-                                                    </label>
-                                                    <!-- <button id="btnExibirSub2" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
-                                                </li>
-
-                                                <li id="camada-sub-menu-item1-1-3">
-                                                    <label class="switch">
-                                                        <div class="switch-wrapper">
-                                                            <input type="checkbox" name="" id="check-item1">
-                                                            <span class="switch-button"></span>  
-                                                        </div>
-                                                        <span class="switch-texto">Pé</span>
-                                                    </label>
-                                                    <!-- <button id="btnExibirSub2" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
-                                                </li>
-                                            </ul>
-
-                                        </li>
-
-                                        <li id="camada-sub-menu-item1-2">
-                                            <label class="switch">
-                                                <div class="switch-wrapper">
-                                                    <input type="checkbox" name="" id="check-item1">
-                                                    <span class="switch-button"></span>  
-                                                </div>
-                                                <span class="switch-texto">Garimpo Rio Vermelho</span>
-                                            </label>
-                                            <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
-                                        </li>
-
-                                        <li id="camada-sub-menu-item1-3">
-                                            <label class="switch">
-                                                <div class="switch-wrapper">
-                                                    <input type="checkbox" name="" id="check-item1">
-                                                    <span class="switch-button"></span>  
-                                                </div>
-                                                <span class="switch-texto">Garimpo Santa Luzia</span>
-                                            </label>
-                                            <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
-                                        </li>
-
-                                        <li id="camada-sub-menu-item1-4">
-                                            <label class="switch">
-                                                <div class="switch-wrapper">
-                                                    <input type="checkbox" name="" id="check-item1">
-                                                    <span class="switch-button"></span>  
-                                                </div>
-                                                <span class="switch-texto">Horto Aranha</span>
-                                            </label>
-                                            <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
-                                        </li>
-
-                                        <li id="camada-sub-menu-item1-5">
-                                            <label class="switch">
-                                                <div class="switch-wrapper">
-                                                    <input type="checkbox" name="" id="check-item1">
-                                                    <span class="switch-button"></span>  
-                                                </div>
-                                                <span class="switch-texto">LT Codemin</span>
-                                            </label>
-                                            <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
-                                        </li>
-
-                                        <li id="camada-sub-menu-item1-6">
-                                            <label class="switch">
-                                                <div class="switch-wrapper">
-                                                    <input type="checkbox" name="" id="check-item1">
-                                                    <span class="switch-button"></span>  
-                                                </div>
-                                                <span class="switch-texto">OCO Codemin</span>
-                                            </label>
-                                            <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
-                                        </li>
-
-                                        <li id="camada-sub-menu-item1-7">
-                                            <label class="switch">
-                                                <div class="switch-wrapper">
-                                                    <input type="checkbox" name="" id="check-item1">
-                                                    <span class="switch-button"></span>  
-                                                </div>
-                                                <span class="switch-texto">Rosariana</span>
-                                            </label>
-                                            <!-- <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button> -->
-                                        </li>
-                                        
-                                    </ul>
-
-                                </li>
-        
-                                <li id="camada-lista-item2">
-                                    <label class="switch">
-                                        <div class="switch-wrapper">
-                                            <input type="checkbox" name="" id="check-item2">
-                                            <span class="switch-button"></span>  
-                                        </div>
-                                        <span class="switch-texto">Direito Mineral</span>
-                                    </label>
-                                    <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button>
-                                </li>
-
-                                <li id="camada-lista-item3">
-                                    <label class="switch">
-                                        <div class="switch-wrapper">
-                                            <input type="checkbox" name="" id="check-item3">
-                                            <span class="switch-button"></span>  
-                                        </div>
-                                        <span class="switch-texto">Limites da Propriedade</span>
-                                    </label>
-                                    <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button>
-                                </li>
-
-                                <li id="camada-lista-item4">
-                                    <label class="switch">
-                                        <div class="switch-wrapper">
-                                            <input type="checkbox" name="" id="check-item4">
-                                            <span class="switch-button"></span>  
-                                        </div>
-                                        <span class="switch-texto">Licenças de Mineração</span>
-                                    </label>
-                                    <button id="btnExibir" aria-label="Exibir"><i class="fas fa-sort-down"></i></button>
-                                </li>
-
-                                
-                            </ul>
 
                     </section>
 
                     <!-- BOX IMAGENS -->
                     <section id="boxImagens">
-                        <div id="box1">
-                            <h2 id="titulo">Imagens <a href="" id="btnInfo" aria-label="Saiba mais"><i class="fas fa-info-circle"></i></a></h2>
-                            <button id="btnFechar" aria-label="Fechar"><i class="fas fa-times"></i></button>
-                        </div>
 
-                        <div id="box2">
-                            <button id="btnFiltros"><i class="fas fa-sliders-h"></i>Filtros</button>
-                            <button id="btnFavoritos" class="active"><i class="far fa-star"></i>Favoritos</button>
-                        </div>
-
-                        <div id="box3">
-
-                            <div id="boxFiltros">
-
-                                <div id="box-filtros-data">
-                                    <p>De:</p>
-                                    <input type="date" name="" id="data-inicio">
-                                    
-                                    <p>Até:</p>
-                                    <input type="date" name="" id="data-fim">
-                                </div>
-
-                                <div id="box-filtros-fonte-imagem">
-                                    
-                                    <div id="box-filtros-fonte-btn"></div>
-                                    <div id="titulo">
-                                        <i class="far fa-images"></i>
-                                        <p>Fonte da imagem</p>
-                                    </div>
-                                    <button class="btn-filtros-imagens" id="btnBaixaResolucao">Baixa resolução</button>
-                                    <button class="btn-filtros-imagens" id="btnAltaResolucao">Alta resolução</button>
-                                    <button class="btn-filtros-imagens" id="btnUpload">Upload</button>
-                                    <button class="btn-filtros-imagens" id="btnMonitoramento">Monitoramento</button>
-                                </div>
-
-                                <div id="box-filtros-nuvens">
-
-                                    <div id="titulo">
-                                        <i class="fas fa-cloud"></i>
-                                        <p>Porcentagens das nuves</p>
-                                    </div>
-
-                                    <input type="range" name="porcentagem" id="porcentagem">
-                                </div>
-
-                                <div id="box-filtros-botoes">
-                                    <button id="btnDescartar">Descartar</button>
-                                    <button id="btnFiltrar">Filtrar</button>
-                                </div>
-                                
+                        <div class="conteudo">
+                            <div id="box1">
+                                <h2 id="titulo">Imagens <a href="" id="btnInfo" aria-label="Saiba mais"><i class="fas fa-info-circle"></i></a></h2>
+                                <button id="btnFechar" aria-label="Fechar"><i class="fas fa-times"></i></button>
                             </div>
 
-                            <div id="boxFavoritos" class="active">
+                            <div id="box2">
+                                <button id="btnFiltros"><i class="fas fa-sliders-h"></i>Filtros</button>
+                                <button id="btnFavoritos" class="active"><i class="far fa-star"></i>Favoritos</button>
+                            </div>
 
-                                <!-- ITEM 1 -->
-                                <div class="box-favoritos-itens">
+                            <div id="box3">
 
-                                    <figure class="img-favorito">
-                                        <img src="img/foto-satelite.png" alt="">
+                                <div id="boxFiltros">
 
-                                        <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
-                                        <p class="img-texto-baixa-resolucao">Baixa resolução</p>
-                                        <p class="img-data">21/12/2021</p>
-                                    </figure>
-                                    
-                                    <div class="linhas">
-                                        <i class="fas fa-satellite-dish"></i>
-                                        <p>Planet Scope 001 - 4 Band</p>
+                                    <div id="box-filtros-data">
+                                        <p>De:</p>
+                                        <input type="date" name="" id="data-inicio">
+                                        
+                                        <p>Até:</p>
+                                        <input type="date" name="" id="data-fim">
                                     </div>
 
-                                    <div class="quebra-linha">
-                                        <div class="linhas">
+                                    <div id="box-filtros-fonte-imagem">
+                                        
+                                        <div id="box-filtros-fonte-btn"></div>
+                                        <div id="titulo">
+                                            <i class="far fa-images"></i>
+                                            <p>Fonte da imagem</p>
+                                        </div>
+                                        <button class="btn-filtros-imagens" id="btnBaixaResolucao">Baixa resolução</button>
+                                        <button class="btn-filtros-imagens" id="btnAltaResolucao">Alta resolução</button>
+                                        <button class="btn-filtros-imagens" id="btnUpload">Upload</button>
+                                        <button class="btn-filtros-imagens" id="btnMonitoramento">Monitoramento</button>
+                                    </div>
+
+                                    <div id="box-filtros-nuvens">
+
+                                        <div id="titulo">
                                             <i class="fas fa-cloud"></i>
-                                            <p>36% Nublado</p>
+                                            <p>Porcentagens das nuves</p>
                                         </div>
-                                        <div class="linhas">
-                                            <i class="far fa-image"></i>
-                                            <p>3m/px Alta</p>
-                                        </div>
+
+                                        <input type="range" name="porcentagem" id="porcentagem">
                                     </div>
+
+                                    <div id="box-filtros-botoes">
+                                        <button id="btnDescartar">Descartar</button>
+                                        <button id="btnFiltrar">Filtrar</button>
+                                    </div>
+                                    
                                 </div>
 
-                                <!-- ITEM 2 -->
-                                <div class="box-favoritos-itens">
+                                <div id="boxFavoritos" class="active">
 
-                                    <figure class="img-favorito">
-                                        <img src="img/foto-satelite.png" alt="">
+                                    <!-- ITEM 1 -->
+                                    <div class="box-favoritos-itens">
 
-                                        <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
-                                        <p class="img-texto-alta-resolucao">Alta resolução</p>
-                                        <p class="img-data">25/12/2021</p>
-                                    </figure>
+                                        <figure class="img-favorito">
+                                            <img src="img/foto-satelite.png" alt="">
+
+                                            <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                            <p class="img-texto-baixa-resolucao">Baixa resolução</p>
+                                            <p class="img-data">21/12/2021</p>
+                                        </figure>
+                                        
+                                        <div class="linhas">
+                                            <i class="fas fa-satellite-dish"></i>
+                                            <p>Planet Scope 001 - 4 Band</p>
+                                        </div>
+
+                                        <div class="quebra-linha">
+                                            <div class="linhas">
+                                                <i class="fas fa-cloud"></i>
+                                                <p>36% Nublado</p>
+                                            </div>
+                                            <div class="linhas">
+                                                <i class="far fa-image"></i>
+                                                <p>3m/px Alta</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ITEM 2 -->
+                                    <div class="box-favoritos-itens">
+
+                                        <figure class="img-favorito">
+                                            <img src="img/foto-satelite.png" alt="">
+
+                                            <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                            <p class="img-texto-alta-resolucao">Alta resolução</p>
+                                            <p class="img-data">25/12/2021</p>
+                                        </figure>
+                                        
+                                        <div class="linhas">
+                                            <i class="fas fa-satellite-dish"></i>
+                                            <p>Planet Scope 001 - 4 Band</p>
+                                        </div>
+
+                                        <div class="quebra-linha">
+                                            <div class="linhas">
+                                                <i class="fas fa-cloud"></i>
+                                                <p>36% Nublado</p>
+                                            </div>
+                                            <div class="linhas">
+                                                <i class="far fa-image"></i>
+                                                <p>3m/px Alta</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- ITEM 3 -->
+                                    <div class="box-favoritos-itens">
+
+                                        <figure class="img-favorito">
+                                            <img src="img/foto-satelite.png" alt="">
+
+                                            <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                            <p class="img-texto-monitoramento">Monitoramento</p>
+                                            <p class="img-data">21/12/2021</p>
+                                        </figure>
+                                        
+                                        <div class="linhas">
+                                            <i class="fas fa-satellite-dish"></i>
+                                            <p>Planet Scope 001 - 4 Band</p>
+                                        </div>
+
+                                        <div class="quebra-linha">
+                                            <div class="linhas">
+                                                <i class="fas fa-cloud"></i>
+                                                <p>36% Nublado</p>
+                                            </div>
+                                            <div class="linhas">
+                                                <i class="far fa-image"></i>
+                                                <p>3m/px Alta</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                     
-                                    <div class="linhas">
-                                        <i class="fas fa-satellite-dish"></i>
-                                        <p>Planet Scope 001 - 4 Band</p>
+
+                                    <!-- ITEM 4 -->
+                                    <div class="box-favoritos-itens">
+
+                                        <figure class="img-favorito">
+                                            <img src="img/foto-satelite.png" alt="">
+
+                                            <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                            <p class="img-texto-upload">Upload</p>
+                                            <p class="img-data">21/12/2021</p>
+                                        </figure>
+                                        
+                                        <div class="linhas">
+                                            <i class="fas fa-satellite-dish"></i>
+                                            <p>Planet Scope 001 - 4 Band</p>
+                                        </div>
+
+                                        <div class="quebra-linha">
+                                            <div class="linhas">
+                                                <i class="fas fa-cloud"></i>
+                                                <p>36% Nublado</p>
+                                            </div>
+                                            <div class="linhas">
+                                                <i class="far fa-image"></i>
+                                                <p>3m/px Alta</p>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <div class="quebra-linha">
-                                        <div class="linhas">
-                                            <i class="fas fa-cloud"></i>
-                                            <p>36% Nublado</p>
-                                        </div>
-                                        <div class="linhas">
-                                            <i class="far fa-image"></i>
-                                            <p>3m/px Alta</p>
-                                        </div>
-                                    </div>
                                 </div>
-
-
-                                <!-- ITEM 3 -->
-                                <div class="box-favoritos-itens">
-
-                                    <figure class="img-favorito">
-                                        <img src="img/foto-satelite.png" alt="">
-
-                                        <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
-                                        <p class="img-texto-monitoramento">Monitoramento</p>
-                                        <p class="img-data">21/12/2021</p>
-                                    </figure>
-                                    
-                                    <div class="linhas">
-                                        <i class="fas fa-satellite-dish"></i>
-                                        <p>Planet Scope 001 - 4 Band</p>
-                                    </div>
-
-                                    <div class="quebra-linha">
-                                        <div class="linhas">
-                                            <i class="fas fa-cloud"></i>
-                                            <p>36% Nublado</p>
-                                        </div>
-                                        <div class="linhas">
-                                            <i class="far fa-image"></i>
-                                            <p>3m/px Alta</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-
-                                <!-- ITEM 4 -->
-                                <div class="box-favoritos-itens">
-
-                                    <figure class="img-favorito">
-                                        <img src="img/foto-satelite.png" alt="">
-
-                                        <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
-                                        <p class="img-texto-upload">Upload</p>
-                                        <p class="img-data">21/12/2021</p>
-                                    </figure>
-                                    
-                                    <div class="linhas">
-                                        <i class="fas fa-satellite-dish"></i>
-                                        <p>Planet Scope 001 - 4 Band</p>
-                                    </div>
-
-                                    <div class="quebra-linha">
-                                        <div class="linhas">
-                                            <i class="fas fa-cloud"></i>
-                                            <p>36% Nublado</p>
-                                        </div>
-                                        <div class="linhas">
-                                            <i class="far fa-image"></i>
-                                            <p>3m/px Alta</p>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </section>
 
                     <!-- BOX COMPARAR -->
                     <section id="boxComparar">
-                        <div id="box1">
-                            <h2 id="titulo">Comparar <a href="" id="btnInfo" aria-label="Saiba mais"><i class="fas fa-info-circle"></i></a></h2>
-                            <button id="btnFechar" aria-label="Fechar"><i class="fas fa-times"></i></button>
-                        </div>
 
-                        <div id="box2">
-                            <button id="btnFiltros"><i class="fas fa-sliders-h"></i>Filtros</button>
-                            <button id="btnFavoritos"><i class="far fa-star"></i>Favoritos</button>
-                        </div>
+                        <div class="conteudo">
+                            <div id="box1">
+                                <h2 id="titulo">Comparar <a href="" id="btnInfo" aria-label="Saiba mais"><i class="fas fa-info-circle"></i></a></h2>
+                                <button id="btnFechar" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                            </div>
 
-                        <div id="box3">
-                            Box 3
+                            <div id="box2">
+                                <button id="btnFiltrosComparar"><i class="fas fa-sliders-h"></i>Filtros</button>
+                                <button id="btnFavoritosComparar"><i class="far fa-star"></i>Favoritos</button>
+                            </div>
+
+                            <div id="box3">
+                                
+                                <div id="boxFiltrosComparar">
+
+                                    <div id="box-filtros-data">
+                                        <p>De:</p>
+                                        <input type="date" name="" id="data-inicio">
+                                        
+                                        <p>Até:</p>
+                                        <input type="date" name="" id="data-fim">
+                                    </div>
+
+                                    <div id="box-filtros-fonte-imagem">
+                                        
+                                        <div id="box-filtros-fonte-btn"></div>
+                                        <div id="titulo">
+                                            <i class="far fa-images"></i>
+                                            <p>Fonte da imagem</p>
+                                        </div>
+                                        <button class="btn-filtros-imagens" id="btnBaixaResolucao">Baixa resolução</button>
+                                        <button class="btn-filtros-imagens" id="btnAltaResolucao">Alta resolução</button>
+                                        <button class="btn-filtros-imagens" id="btnUpload">Upload</button>
+                                        <button class="btn-filtros-imagens" id="btnMonitoramento">Monitoramento</button>
+                                    </div>
+
+                                    <div id="box-filtros-nuvens">
+
+                                        <div id="titulo">
+                                            <i class="fas fa-cloud"></i>
+                                            <p>Porcentagens das nuves</p>
+                                        </div>
+
+                                        <input type="range" name="porcentagem" id="porcentagem">
+                                    </div>
+
+                                    <div id="box-filtros-botoes">
+                                        <button id="btnDescartar">Descartar</button>
+                                        <button id="btnFiltrar">Filtrar</button>
+                                    </div>
+                                    
+                                </div>
+
+                                <div id="boxFavoritosComparar">
+
+                                    <!-- ITEM 1 -->
+                                    <div class="box-favoritos-itens">
+
+                                        <figure class="img-favorito">
+                                            <img src="img/img-comparacao.png" alt="">
+
+                                            <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                            
+                                            <p class="img-data-antes"> <i class="far fa-calendar-minus"></i>01/02/2018</p>
+
+                                            <p class="img-data-depois"> <i class="far fa-calendar-minus"></i>21/12/2021</p>
+                                        </figure>
+                                        
+                                    </div>
+
+                                    <!-- ITEM 2 -->
+                                    <div class="box-favoritos-itens">
+
+                                        <figure class="img-favorito">
+                                            <img src="img/img-comparacao.png" alt="">
+
+                                            <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                            
+                                            <p class="img-data-antes"> <i class="far fa-calendar-minus"></i>01/02/2018</p>
+
+                                            <p class="img-data-depois"> <i class="far fa-calendar-minus"></i>21/12/2021</p>
+                                        </figure>
+                                    </div>
+
+                                    <!-- ITEM 3 -->
+                                    <div class="box-favoritos-itens">
+
+                                        <figure class="img-favorito">
+                                            <img src="img/img-comparacao.png" alt="">
+
+                                            <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                            
+                                            <p class="img-data-antes"> <i class="far fa-calendar-minus"></i>01/02/2018</p>
+
+                                            <p class="img-data-depois"> <i class="far fa-calendar-minus"></i>21/12/2021</p>
+                                        </figure>
+                                    </div>
+
+                                    <!-- ITEM 4 -->
+                                    <div class="box-favoritos-itens">
+
+                                        <figure class="img-favorito">
+                                            <img src="img/img-comparacao.png" alt="">
+
+                                            <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                            
+                                            <p class="img-data-antes"> <i class="far fa-calendar-minus"></i>01/02/2018</p>
+
+                                            <p class="img-data-depois"> <i class="far fa-calendar-minus"></i>21/12/2021</p>
+                                        </figure>
+                                    </div>
+
+                                    <!-- ITEM 5 -->
+                                    <div class="box-favoritos-itens">
+
+                                        <figure class="img-favorito">
+                                            <img src="img/img-comparacao.png" alt="">
+
+                                            <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                            
+                                            <p class="img-data-antes"> <i class="far fa-calendar-minus"></i>01/02/2018</p>
+
+                                            <p class="img-data-depois"> <i class="far fa-calendar-minus"></i>21/12/2021</p>
+                                        </figure>
+                                    </div>
+
+                                    <!-- ITEM 6 -->
+                                    <div class="box-favoritos-itens">
+
+                                        <figure class="img-favorito">
+                                            <img src="img/img-comparacao.png" alt="">
+
+                                            <button class="btnMarcarFavorito" aria-label="add Favorito"><i class="fas fa-star"></i></button>
+                                            
+                                            <p class="img-data-antes"> <i class="far fa-calendar-minus"></i>01/02/2018</p>
+
+                                            <p class="img-data-depois"> <i class="far fa-calendar-minus"></i>21/12/2021</p>
+                                        </figure>
+                                    </div>
+
+                                </div>
+
+                            </div>
                         </div>
                     </section>
 
                 </section>
+            </section>
+
+            <!-- Meio da Tela -->
+            <section id="meioTela">
+
+                <div class="conteudo-centro">
+                    <div id="meioTela-esquerda">
+
+                        <div class="fundo-centro">
+                            <i class="fas fa-hand-sparkles"></i>
+                            <p>Arraste a imagem para comparar</p>
+                        </div>
+                        
+                    </div>
+                        
+                    <div id="meioTela-direita"><i class="fas fa-hand-sparkles"></i></div>
+                    <div id="meioTela-linha"><i class="fas fa-arrows-alt-h"></i></div>
+                </div>
+
             </section>
 
             <!-- Lateral Direita -->
@@ -563,7 +723,7 @@
 
                     <div id="topo-lateral-direita">
                         <div id="box1-titulo">
-                            <h2 id="titulo">Detalhes</h2>
+                            <h2 id="titulo-lateral-direita">Detalhes</h2>
                             <button id="btnFecharDireita" aria-label="Fechar"><i class="fas fa-times"></i></button>
                         </div>
 
@@ -669,21 +829,98 @@
 
                         <div class="box2">
 
-                            <div class="boxopt"></div>
-                            <p>Status</p>
-                            <select name="optStatus" id="optStatus">
-                                <option value="Pendente">Pendente</option>
-                                <option value="Opção 2">Opção 2</option>
-                                <option value="Opção 3">Opção 3</option>
-                            </select>
-                            
+                            <div class="box-opt" id="box-opt-status">
+                                <p id="texto">Status</p>
+                                <label class="wrapper-select">
+                                    <select name="optStatus" id="optStatus">
+                                        <option value="Pendente">Pendente</option>
+                                        <option value="Opção 2">Opção 2</option>
+                                        <option value="Opção 3">Opção 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </label>
+                            </div>
+
+                            <div class="box-opt" id="box-opt-justificativa">
+                                <p id="texto">Justificativa</p>
+                                <label class="wrapper-select">
+                                    <select name="optStatus" id="optStatus">
+                                        <option value="Pendente">Pendente</option>
+                                        <option value="Opção 2">Opção 2</option>
+                                        <option value="Opção 3">Opção 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </label>
+                            </div>
+
+                            <div class="box-opt" id="box-opt-responsavel">
+                                <p id="texto">Responsável</p>
+                                <label class="wrapper-select">
+                                    <select name="optStatus" id="optStatus">
+                                        <option value="Pendente">Pendente</option>
+                                        <option value="Opção 2">Opção 2</option>
+                                        <option value="Opção 3">Opção 3</option>
+                                    </select>
+                                    <i class="fas fa-sort-down"></i>
+                                </label>
+                            </div>
+
+                            <div class="box-mensagem" id="box-mensagem">
+                                <p id="texto">Observação</p>
+                                <textarea name="" id="campo-mensagem" cols="" rows="4" placeholder="Digite aqui sua observação"></textarea>
+                            </div>
+
+                            <div class="box-datas" id="box-datas">
+
+                                <div class="input-data">
+                                    <p id="texto">Cadastro</p>
+                                    <input type="date" name="" id="data-cadastro">
+                                </div>
+
+                                <div class="input-data">
+                                    <p id="texto">Vencimento</p>
+                                    <input type="date" name="" id="data-vencimento">
+                                </div>
+                                
+                            </div>
+
+                            <div class="box-botao">
+                                <button id="btn-salvar-alertas">Salvar</button>
+                            </div>
+
+
                         </div>
                         
                     </section>
 
                     <!-- BOX HISTORICOS -->
                     <section id="boxHistorico">
-                        BOX HISTORICOS
+                        
+                        <div class="box1">
+
+                            <div class="box-linha-impar">
+                                <p id="titulo">Atividade Mineradora</p>
+                                <p id="texto">
+                                    Na data <span class="texto-destaque" id="historico-data">21/09/2021</span> o alerta <span class="texto-destaque" id="historico-alerta">4045-0996-2</span> - <span class="texto-destaque" id="historico-periodo">Período 09/08/2018 à 06/07/2021</span> foi alterado para o status <span class="texto-destaque" id="historico-status">Pendente</span> pelo usuário <span class="texto-destaque" id="historico-usuario">Geoinova</span>
+                                </p>
+                            </div>
+
+                            <div class="box-linha-par">
+                                <p id="titulo">Atividade Mineradora</p>
+                                <p id="texto">
+                                    Na data <span class="texto-destaque" id="historico-data">21/09/2021</span> o alerta <span class="texto-destaque" id="historico-alerta">4045-0996-2</span> - <span class="texto-destaque" id="historico-periodo">Período 09/08/2018 à 06/07/2021</span> foi alterado para o status <span class="texto-destaque" id="historico-status">Pendente</span> pelo usuário <span class="texto-destaque" id="historico-usuario">Geoinova</span>
+                                </p>
+                            </div>
+
+                            <div class="box-linha-impar">
+                                <p id="titulo">Atividade Mineradora</p>
+                                <p id="texto">
+                                    Na data <span class="texto-destaque" id="historico-data">21/09/2021</span> o alerta <span class="texto-destaque" id="historico-alerta">4045-0996-2</span> - <span class="texto-destaque" id="historico-periodo">Período 09/08/2018 à 06/07/2021</span> foi alterado para o status <span class="texto-destaque" id="historico-status">Pendente</span> pelo usuário <span class="texto-destaque" id="historico-usuario">Geoinova</span>
+                                </p>
+                            </div>
+
+                        </div>
+
                     </section>
 
                 </div>

@@ -20,6 +20,15 @@
     z-index: 1000;
  }
 
+ /* Esse Estilo que permite ocultar o conteúdo do box ESQUERDO sem perder o efeito por ter usado display none */
+.containerPrincipal #lateralEsquerda #boxEsquerdo #boxComparar .conteudo{
+    display: none;
+}
+
+.containerPrincipal #lateralEsquerda.active #boxEsquerdo #boxComparar.active .conteudo{
+    display: block;
+}
+
  
 /* ESTILO BOX1 */
 #boxEsquerdo #boxComparar #box1{
@@ -103,18 +112,229 @@
     font-size: 22px;
 }
 
-#boxEsquerdo #boxComparar #box2 button#btnFavoritos{
+#boxEsquerdo #boxComparar #box2 button#btnFavoritosComparar{
     border-left: solid 2px #dedede;
 }
 
+#boxEsquerdo #boxComparar #box2 > button.active{
+    color: #0052f3;
+}
 
 /* ESTILO BOX3 */
 #boxEsquerdo #boxComparar #box3{
-    position: absolute;
-    padding: 20px;
     border-top: solid 2px #dedede;
     width: 100%;
     height: calc(100% - 190px);
-    border: solid 1px red;
+    /* border: solid 1px red; */
+    position: absolute;
+    overflow: auto;
+}
+
+/* ESTILO FILTROS */
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    width: 0;
+    transition: .5s;
+
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-data{
+    text-align: center;
+    padding: 20px;
+
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-data > p{
+    color: red;
+    margin-bottom: 10px;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-data > input{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-fonte-imagem{
+    border-top: solid 2px #dedede;
+    padding: 20px;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-fonte-imagem #titulo{
+    display: flex;
+    color: #0052f3;
+    gap: 3px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-fonte-imagem > button{
+    background: none;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: #636363;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-fonte-imagem > button:hover{
+    background-color: #0052f3;
+}
+
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-nuvens{
+    border-top: solid 2px #dedede;
+    padding: 20px;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-nuvens #titulo{
+    display: flex;
+    color: #0052f3;
+    gap: 3px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-nuvens > input{
+    width: 100%;
+}
+
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-botoes{
+    border-top: solid 2px #dedede;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-botoes > button{
+    background: none;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-botoes #btnDescartar{
+    background-color: #e05157;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-botoes #btnDescartar:hover{
+    background-color: #b62a31;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-botoes #btnFiltrar{
+    background-color: #4bc673;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar #box-filtros-botoes #btnFiltrar:hover{
+    background-color: #29a552;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFiltrosComparar.active{
+    width: 100%;
+    opacity: 1;
+    z-index: 1000;
+    
+}
+
+
+/* ESTILO FAVORITOS */
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar{
+    position: relative;
+    top: 0px;
+    padding: 20px;
+    opacity: 0;
+    width: 0;
+    transition: .5s;
+}
+
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens{
+    margin-bottom: 30px;
+    
+}
+
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens  .img-favorito{
+    position: relative;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens  .img-favorito > img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens .img-favorito .btnMarcarFavorito{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.705);
+    cursor: pointer;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens .img-favorito .btnMarcarFavorito[aria-label]::after{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: max-content;
+}
+
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens .img-favorito .btnMarcarFavorito:hover{
+    color: yellow;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens .img-favorito .btnMarcarFavorito.active{
+    color: yellow;
+}
+
+/* ESTILO DO TEXTO SOBRE A FOTO */
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens .img-favorito .img-data-antes{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    color: white;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens .img-favorito .img-data-depois{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens .linhas{
+    display: flex;
+    color: #636363;
+    justify-items: center;
+    /* font-size: 14px; */
+    gap: 5px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar .box-favoritos-itens .quebra-linha{
+    display: flex;
+}
+
+#boxEsquerdo #boxComparar #box3 #boxFavoritosComparar.active{
+    opacity: 1;
+    width: 100%;
+    z-index: 1000;
     
 }

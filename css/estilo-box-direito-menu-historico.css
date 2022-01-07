@@ -2,7 +2,6 @@
     position: absolute;
     width: 0;
     opacity: 0;
-    /* display: none; */
     overflow: auto;
     transition: .5s;
 }
@@ -11,5 +10,36 @@
     width: 100%;
     opacity: 1;
     z-index: 1000;
-    /* display: block; */
+    height: calc(100% - 200px);
+    overflow: auto;
+}
+
+/* Estilo Box 1 */
+
+#lateralDireita #boxHistorico .box1{
+    color: #6e6e6e;
+    font-size: 13px;
+}
+
+/* Estilo Linha Impar */
+#lateralDireita #boxHistorico .box1 .box-linha-impar{
+    padding: 20px 35px;
+    background-color: #e3e3e3;
+}
+
+#lateralDireita #boxHistorico .box1 #titulo{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#lateralDireita #boxHistorico .box1 #texto .texto-destaque{
+    color: #0052f3;
+    font-weight: bold;
+}
+
+/* Estilo Linha Par */
+#lateralDireita #boxHistorico .box1 .box-linha-par{
+    padding: 20px 35px;
+    /* background-color: #e3e3e3; */
 }

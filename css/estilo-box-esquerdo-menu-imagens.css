@@ -20,6 +20,14 @@
     z-index: 1000;
  }
 
+  /* Esse Estilo que permite ocultar o conteúdo do box ESQUERDO sem perder o efeito por ter usado display none */
+.containerPrincipal #lateralEsquerda #boxEsquerdo #boxImagens .conteudo{
+    display: none;
+}
+
+.containerPrincipal #lateralEsquerda.active #boxEsquerdo #boxImagens.active .conteudo{
+    display: block;
+}
  
 /* ESTILO BOX1 */
 #boxEsquerdo #boxImagens #box1{
@@ -256,17 +264,20 @@
 }
 
 
+#boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens  .img-favorito {
+    position: relative;
+}
+
 #boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens  .img-favorito > img{
     width: 100%;
     border-radius: 10px;
-    text-align: center;
-    position: relative !important;
+
 }
 
 #boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .btnMarcarFavorito{
     position: absolute;
-    top: 30px;
-    left: 35px;
+    top: 10px;
+    left: 15px;
 
     background: none;
     border: none;
@@ -294,8 +305,8 @@
 /* ESTILO DO TEXTO SOBRE A FOTO */
 #boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .img-texto-baixa-resolucao{
     position: absolute;
-    top: 30px;
-    right: 35px;
+    top: 10px;
+    right: 15px;
 
     background-color: #00cec6;
     color: white;
@@ -305,8 +316,8 @@
 
 #boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .img-texto-alta-resolucao{
     position: absolute;
-    top: 30px;
-    right: 35px;
+    top: 10px;
+    right: 15px;
 
     background-color: #0052f3;
     color: white;
@@ -316,8 +327,8 @@
 
 #boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .img-texto-monitoramento{
     position: absolute;
-    top: 30px;
-    right: 35px;
+    top: 10px;
+    right: 15px;
 
     background-color: #00d46b;
     color: white;
@@ -327,8 +338,8 @@
 
 #boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .img-texto-upload{
     position: absolute;
-    top: 30px;
-    right: 35px;
+    top: 10px;
+    right: 15px;
 
     background-color: #7b28ca;
     color: white;
@@ -338,8 +349,8 @@
 
 #boxEsquerdo #boxImagens #box3 #boxFavoritos .box-favoritos-itens .img-favorito .img-data{
     position: absolute;
-    right: 35px;
-    top: 130px;
+    right: 15px;
+    bottom: 10px;
 
     color: white;
     font-weight: bold;

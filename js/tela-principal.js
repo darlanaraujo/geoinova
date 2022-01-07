@@ -41,7 +41,6 @@ function menuBoxImagens(){
     boxImagens.classList.toggle('active');
     btnImagens.classList.toggle('active');
 
-    fundoClick.classList.add('active');
 }
 
 
@@ -51,8 +50,8 @@ function menuBoxComparar(){
     lateralEsquerda.classList.toggle('active');
     boxComparar.classList.toggle('active');
     btnComparar.classList.toggle('active');
+    startSubMenuComparar();
 
-    fundoClick.classList.add('active');
 }
 
 
@@ -134,6 +133,32 @@ function subMenuImagensFavoritos(){
     btnFiltros.classList.remove('active');
 }
 
+/** =========================================================================
+ ** AÇÕES DO MENU ESQUERDO - COMPARAR
+ ** ========================================================================*/
+ const btnFiltrosComparar = document.querySelector('#btnFiltrosComparar');
+ const btnFavoritosComparar = document.querySelector('#btnFavoritosComparar');
+ 
+ const boxFiltrosComparar = document.querySelector('#boxFiltrosComparar');
+ const boxFavoritosComparar = document.querySelector('#boxFavoritosComparar');
+
+btnFavoritosComparar.addEventListener('click', startSubMenuComparar);
+
+btnFiltrosComparar.addEventListener('click', () => {
+    btnFiltrosComparar.classList.add('active');
+    boxFiltrosComparar.classList.add('active');
+
+    btnFavoritosComparar.classList.remove('active');
+    boxFavoritosComparar.classList.remove('active');
+});
+
+function startSubMenuComparar(){
+    btnFavoritosComparar.classList.add('active');
+    boxFavoritosComparar.classList.add('active');
+
+    btnFiltrosComparar.classList.remove('active');
+    boxFiltrosComparar.classList.remove('active');
+};
 
 /** =========================================================================
  ** AÇÕES DO MENU DIREITO
@@ -153,6 +178,7 @@ function menuBoxDireito(){
 function startBoxDireito(){
     btnDetalhes.classList.add('active');
     boxDetalhes.classList.add('active');
+    tituloLateralDireita.innerHTML = 'Detalhes';
 
     btnProblema.classList.remove('active');
     btnAlertas.classList.remove('active');
@@ -173,9 +199,12 @@ const boxProblema = document.querySelector('#boxProblema');
 const boxAlertas = document.querySelector('#boxAlertas');
 const boxHistorico = document.querySelector('#boxHistorico');
 
+let tituloLateralDireita = document.querySelector('#titulo-lateral-direita');
+
 btnDetalhes.addEventListener('click', function(){
     btnDetalhes.classList.add('active');
     boxDetalhes.classList.add('active');
+    tituloLateralDireita.innerHTML = 'Detalhes';
 
     btnProblema.classList.remove('active');
     btnAlertas.classList.remove('active');
@@ -190,6 +219,8 @@ btnDetalhes.addEventListener('click', function(){
 btnProblema.addEventListener('click', function(){
     btnProblema.classList.add('active');
     boxProblema.classList.add('active');
+    tituloLateralDireita.innerHTML = 'Problema';
+
 
     btnDetalhes.classList.remove('active');
     btnAlertas.classList.remove('active');
@@ -204,6 +235,8 @@ btnProblema.addEventListener('click', function(){
 btnAlertas.addEventListener('click', function(){
     btnAlertas.classList.add('active');
     boxAlertas.classList.add('active');
+    tituloLateralDireita.innerHTML = 'Alertas';
+
 
     btnDetalhes.classList.remove('active');
     btnProblema.classList.remove('active');
@@ -217,6 +250,8 @@ btnAlertas.addEventListener('click', function(){
 btnHistorico.addEventListener('click', function(){
     btnHistorico.classList.add('active');
     boxHistorico.classList.add('active');
+    tituloLateralDireita.innerHTML = 'Histórico';
+
 
     btnDetalhes.classList.remove('active');
     btnProblema.classList.remove('active');

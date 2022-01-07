@@ -29,17 +29,97 @@
     margin-bottom: 10px;
 }
 
+/* Estilo Box 2 */
 #lateralDireita #boxAlertas .box2{
     padding: 15px 35px;
     color: #7e7d7e;
     font-size: 14px;
 }
 
-#lateralDireita #boxAlertas .box2 > label{
-    display: inline-block;
+/* Estilo Select */
+#lateralDireita #boxAlertas .box2 .box-opt{
+    display: block;
+    /* margin-bottom: 5px; */
+    margin: 10px 0;
 }
 
-#lateralDireita #boxAlertas .box2 > select{
-    display: block;
+#lateralDireita #boxAlertas .box2 .box-opt .wrapper-select{
+    position: relative;
+}
+
+#lateralDireita #boxAlertas .box2 .box-opt .wrapper-select > select{
+    appearance: none;
     width: 100%;
+    height: 30px;
+    background-color: white;
+    color: #7e7d7e;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#lateralDireita #boxAlertas .box2 .box-opt .wrapper-select i{
+    position: absolute;
+    top: -3px;
+    right: 20px;
+    color: #0052f3;
+    font-size: 17px;
+}
+
+/* Estilo Campo Mensagem */
+
+#lateralDireita #boxAlertas .box2 .box-mensagem #campo-mensagem{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #7e7d7e;
+    font-size: 14px;
+}
+
+/* Estilo Calendário */
+#lateralDireita #boxAlertas .box2 .box-datas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between; */
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+
+#lateralDireita #boxAlertas .box2 .box-datas .input-data > input{
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 5px;
+    width: 100%;
+    font-size: 10px;
+    padding: 3px 10px;
+    color: #7e7d7e;
+    
+}
+
+/* Estilo Botão Salvar */
+#lateralDireita #boxAlertas .box2 .box-botao{
+    width: 100%;
+    margin: 20px 0;
+}
+
+#lateralDireita #boxAlertas .box2 .box-botao > button{
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #4bc673;
+    color: white;
+    cursor: pointer;
+}
+
+#lateralDireita #boxAlertas .box2 .box-botao > button:hover{
+    background-color: #238d47;
 }
