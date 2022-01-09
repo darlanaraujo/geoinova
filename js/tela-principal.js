@@ -70,6 +70,8 @@ function menuBoxComparar(){
      boxCamadas.classList.remove('active');
      boxImagens.classList.remove('active');
      boxComparar.classList.remove('active');
+     boxMeioTela.classList.remove('active');
+     lateralDireita.classList.remove('active');
 
      btnCamadas.classList.remove('active');
      btnImagens.classList.remove('active');
@@ -142,6 +144,8 @@ function subMenuImagensFavoritos(){
  const boxFiltrosComparar = document.querySelector('#boxFiltrosComparar');
  const boxFavoritosComparar = document.querySelector('#boxFavoritosComparar');
 
+ const boxMeioTela = document.querySelector('#meioTela');
+
 btnFavoritosComparar.addEventListener('click', startSubMenuComparar);
 
 btnFiltrosComparar.addEventListener('click', () => {
@@ -156,9 +160,13 @@ function startSubMenuComparar(){
     btnFavoritosComparar.classList.add('active');
     boxFavoritosComparar.classList.add('active');
 
+    boxMeioTela.classList.add('active');
+
     btnFiltrosComparar.classList.remove('active');
     boxFiltrosComparar.classList.remove('active');
 };
+
+
 
 /** =========================================================================
  ** AÇÕES DO MENU DIREITO

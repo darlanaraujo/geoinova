@@ -223,6 +223,8 @@ body{
     right: 0;
     bottom: 0;
     margin: auto;
+
+    z-index: 999;
 }
 
 @media (max-width: 1200px){
