@@ -375,6 +375,92 @@ body{
     font-weight: 10;
 }
 
+/* Box Mensagem de Erro! */
+body #box-msg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+
+    width: 500px;
+    height: 0px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.459);
+
+    transform: translate(0px, -50px);
+    opacity: 0;
+    transition: .5s;
+    z-index: 0;
+
+}
+
+body #box-msg #btnClose{
+    background: none;
+    border: none;
+    background-color: #626262;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+body #box-msg #btnClose:hover{
+    background-color: #0052f3;
+}
+
+body #box-msg.active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    height: 250px;
+    z-index: 1000;
+    
+}
+
+body #box-msg .box-msg-fundo{
+    display: none;
+}
+
+body #box-msg.active .box-msg-fundo{
+    display: block;
+}
+
+body #box-msg #logo{
+    width: 100px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+body #box-msg #emoj{
+    display: inline-block;
+    margin-bottom: 30px;
+    
+}
+
+body #box-msg #texto{
+    color: #424242;
+    margin-bottom: 40px;
+}
+
+body #box-msg #sub-texto{
+    font-size: 12px;
+    font-style: italic;
+    color: #838383;
+}
+
 @media (max-height: 850px){
     body{
         overflow: scroll;
